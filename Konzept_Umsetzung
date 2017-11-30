@@ -1,0 +1,34 @@
+Komplettes Konzept
+
+Übersicht Begriffe:
+	- Begriffe über den Rand hinaus -> Slide (Bewegen der ganzen Fläche: neue/andere Begriffe werden angezeigt): Nur auf y-Achse verschieben (hoch und runter)
+	- Linker Rand: Favoritenliste
+	
+Ausgewählter Begriff:
+	- Ein Begriff ausgewählt: Stapel von Begriffen in Ecke -> ausgewählter Begriff ganz oben
+		-> Klick auf Stapel bzw. Ziehen des Begriffs in Mitte: Übersicht der Begriffe wird angezeigt
+	- Bilder werden angezeigt; nach oben und unten scrollen um alle anzuzeigen (ähnlich wie Übersicht der Begriffe)
+		-> Pinchen?
+
+Detailsansicht:
+	- Bild wird in Groß angezeigt
+	- Daten auf Rückseite -> Daten= (Original)-Titel, Darstellung, Herstellung
+		-> Mit Eselsohr an Ecke kennzeichnen, dass gewendet werden kann
+	- Bild in Favoritenliste ziehen
+	
+-------------------------------------------------------	
+
+Umsetzung
+
+Übersicht Begriffe:
+- Übersicht der Begriffe auf kompletter Größe ohne Scrollen
+	-> kleine Auswahl an Begriffen
+- Linker Rand: Favoritenliste
+
+Ausgewählter Begriff:
+- Begriff in einer Ecke -> Klick auf Begriff: Übersicht der Begriffe
+- Übersicht der Bilder auf kompletter Größe ohne Scrollen
+
+Detailsansicht:
+- Bild in Groß -> Eselsóhr an einer Ecke
+- Daten auf Rückseite anzeigen
