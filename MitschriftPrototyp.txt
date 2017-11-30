@@ -1,0 +1,17 @@
+Ideen nach Prototyp 1:
+persektive wall
+Enden anderer Bilder
+qr / URL smartphone Details laden
+Interessante Artefakte finden: Druck, App
+Liste aufbauen "interessiert mich" ->Bewertung 
+APP: Sprache zu interssiler´tem Bild
+aus Details in Stichwort übersicht
+wie bilder uch bei stichsorten (ränder zeugen)
+Bezug zu Persona
+
+
+Anforderungen
+- genaues Konzept
+- ein Teil implementieren aber "richtig"
+- Darstellen wo die Implementierung in der Story liegt
+- Neuere Interaktion / für Prototyp charakteristische Interaktion implementieren
