@@ -1,4 +1,4 @@
-Komplettes Konzept
+﻿Komplettes Konzept
 
 Übersicht Begriffe:
 	- Begriffe über den Rand hinaus -> Slide (Bewegen der ganzen Fläche: neue/andere Begriffe werden angezeigt): Nur auf y-Achse verschieben (hoch und runter)
@@ -9,13 +9,20 @@ Ausgewählter Begriff:
 		-> Klick auf Stapel bzw. Ziehen des Begriffs in Mitte: Übersicht der Begriffe wird angezeigt
 	- Bilder werden angezeigt; nach oben und unten scrollen um alle anzuzeigen (ähnlich wie Übersicht der Begriffe)
 		-> Pinchen?
+		-> teilweise mehrere Bilder für ein Artefakt: z.B. beim Hovern umdrehen?
 
 Detailsansicht:
 	- Bild wird in Groß angezeigt
 	- Daten auf Rückseite -> Daten= (Original)-Titel, Darstellung, Herstellung
 		-> Mit Eselsohr an Ecke kennzeichnen, dass gewendet werden kann
+		-> Weitere Darstellungs-Attribute des Bilds auflisten: Auswählbar, um von dort direkt in Ausgewählten Begriff mit bildern drum rum zu kommen
 	- Bild in Favoritenliste ziehen
-	
+
+Favoritenliste:
+	- Mit Wischgeste auf Smartphone ziehen oder drucken
+	- Auf Smartphone/Gedruckt: Museumsplan mit Punkten (Favoriten)
+	(um zu erreichen, dass Persona Maximial Müller, sich Artefakte im Museum anschaut)
+
 -------------------------------------------------------	
 
 Umsetzung
