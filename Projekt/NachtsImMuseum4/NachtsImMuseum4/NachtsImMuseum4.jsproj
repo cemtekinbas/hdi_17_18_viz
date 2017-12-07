@@ -52,14 +52,20 @@
     <TargetPlatformMinVersion>10.0.10240.0</TargetPlatformMinVersion>
     <MinimumVisualStudioVersion>$(VersionNumberMajor).$(VersionNumberMinor)</MinimumVisualStudioVersion>
     <DefaultLanguage>de-DE</DefaultLanguage>
-    
     <PackageCertificateKeyFile>NachtsImMuseum4_TemporaryKey.pfx</PackageCertificateKeyFile>
-    
   </PropertyGroup>
   <ItemGroup>
     <AppxManifest Include="package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
+    <Content Include="css\bootstrap-theme.css" />
+    <Content Include="css\bootstrap-theme.css.map" />
+    <Content Include="css\bootstrap-theme.min.css" />
+    <Content Include="css\bootstrap-theme.min.css.map" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.css.map" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\bootstrap.min.css.map" />
     <Content Include="index.html" />
     <Content Include="images\LockScreenLogo.scale-200.png" />
     <Content Include="images\SplashScreen.scale-200.png" />
@@ -68,11 +74,14 @@
     <Content Include="images\Square44x44Logo.targetsize-24_altform-unplated.png" />
     <Content Include="images\StoreLogo.png" />
     <Content Include="images\Wide310x150Logo.scale-200.png" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\jquery-3.2.1.js" />
     <Content Include="js\main.js" />
     <Content Include="css\default.css" />
-    
+    <Content Include="js\npm.js" />
+    <Content Include="mkg-lido-excerpt.json" />
     <None Include="NachtsImMuseum4_TemporaryKey.pfx" />
-    
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).targets" />
   <!-- To modify your build process, add your task inside one of the targets below then uncomment
