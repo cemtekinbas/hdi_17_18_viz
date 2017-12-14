@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>SKUNK</Machine>
+    <WindowsUser>crist</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>ea7eb66e-7fd7-47c0-8c21-924de137d5a1</PackageIdentityName>
+    <PackageIdentityPublisher>CN=cemte</PackageIdentityPublisher>
+    <IntermediateOutputPath>E:\Clouds\OneDrive\Studium\WS 1718\HDI\App2\App2\bld\Debug\</IntermediateOutputPath>
+    <RemoteDeploymentType>
+    </RemoteDeploymentType>
+    <PackageRegistrationPath>
+    </PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+    <DeployOptionalPackages>false</DeployOptionalPackages>
+    <WindowsSdkPath>
+    </WindowsSdkPath>
+    <LayoutDir>E:\Clouds\OneDrive\Studium\WS 1718\HDI\App2\App2\bin\Debug\AppX</LayoutDir>
+    <RegisteredManifestChecksum>C900B83806863F624D6A077097DB7F6C7B59DFC2401032866D7DB93C73B29120</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>ea7eb66e-7fd7-47c0-8c21-924de137d5a1_1.0.0.0_neutral__yg77p4qrh10ap</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>ea7eb66e-7fd7-47c0-8c21-924de137d5a1_yg77p4qrh10ap!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>ea7eb66e-7fd7-47c0-8c21-924de137d5a1</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=cemte</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="E:\Clouds\OneDrive\Studium\WS 1718\HDI\App2\App2\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-12-13T22:12:57.589</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="E:\Clouds\OneDrive\Studium\WS 1718\HDI\App2\App2\css\bootstrap-theme.css">
+      <PackagePath>css\bootstrap-theme.css</PackagePath>
+      <Modified>2016-07-25T13:53:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Clouds\OneDrive\Studium\WS 1718\HDI\App2\App2\css\bootstrap-theme.min.css">
+      <PackagePath>css\bootstrap-theme.min.css</PackagePath>
+      <Modified>2016-07-25T13:53:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Clouds\OneDrive\Studium\WS 1718\HDI\App2\App2\css\bootstrap.css">
+      <PackagePath>css\bootstrap.css</PackagePath>
+      <Modified>2016-07-25T13:53:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Clouds\OneDrive\Studium\WS 1718\HDI\App2\App2\css\bootstrap.min.css">
+      <PackagePath>css\bootstrap.min.css</PackagePath>
+      <Modified>2017-12-13T21:09:58.479</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Clouds\OneDrive\Studium\WS 1718\HDI\App2\App2\css\default.css">
+      <PackagePath>css\default.css</PackagePath>
+      <Modified>2017-12-13T21:21:44.284</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Clouds\OneDrive\Studium\WS 1718\HDI\App2\App2\css\bootstrap-theme.css.map">
+      <PackagePath>css\bootstrap-theme.css.map</PackagePath>
+      <Modified>2016-07-25T13:53:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Clouds\OneDrive\Studium\WS 1718\HDI\App2\App2\css\bootstrap-theme.min.css.map">
+      <PackagePath>css\bootstrap-theme.min.css.map</PackagePath>
+      <Modified>2016-07-25T13:53:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Clouds\OneDrive\Studium\WS 1718\HDI\App2\App2\css\bootstrap.css.map">
+      <PackagePath>css\bootstrap.css.map</PackagePath>
+      <Modified>2016-07-25T13:53:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Clouds\OneDrive\Studium\WS 1718\HDI\App2\App2\css\bootstrap.min.css.map">
+      <PackagePath>css\bootstrap.min.css.map</PackagePath>
+      <Modified>2016-07-25T13:53:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Clouds\OneDrive\Studium\WS 1718\HDI\App2\App2\data\data.json">
+      <PackagePath>data\data.json</PackagePath>
+      <Modified>2017-12-13T20:51:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Clouds\OneDrive\Studium\WS 1718\HDI\App2\App2\data\mkg-lido-excerpt.json">
+      <PackagePath>data\mkg-lido-excerpt.json</PackagePath>
+      <Modified>2017-12-12T22:26:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Clouds\OneDrive\Studium\WS 1718\HDI\App2\App2\fonts\glyphicons-halflings-regular.eot">
+      <PackagePath>fonts\glyphicons-halflings-regular.eot</PackagePath>
+      <Modified>2016-07-25T11:43:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Clouds\OneDrive\Studium\WS 1718\HDI\App2\App2\fonts\glyphicons-halflings-regular.svg">
+      <PackagePath>fonts\glyphicons-halflings-regular.svg</PackagePath>
+      <Modified>2016-07-25T11:43:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Clouds\OneDrive\Studium\WS 1718\HDI\App2\App2\fonts\glyphicons-halflings-regular.ttf">
+      <PackagePath>fonts\glyphicons-halflings-regular.ttf</PackagePath>
+      <Modified>2016-07-25T11:43:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Clouds\OneDrive\Studium\WS 1718\HDI\App2\App2\fonts\glyphicons-halflings-regular.woff">
+      <PackagePath>fonts\glyphicons-halflings-regular.woff</PackagePath>
+      <Modified>2016-07-25T11:43:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Clouds\OneDrive\Studium\WS 1718\HDI\App2\App2\fonts\glyphicons-halflings-regular.woff2">
+      <PackagePath>fonts\glyphicons-halflings-regular.woff2</PackagePath>
+      <Modified>2016-07-25T11:43:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Clouds\OneDrive\Studium\WS 1718\HDI\App2\App2\index.html">
+      <PackagePath>index.html</PackagePath>
+      <Modified>2017-12-13T22:30:46.694</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Clouds\OneDrive\Studium\WS 1718\HDI\App2\App2\images\LockScreenLogo.scale-200.png">
+      <PackagePath>images\LockScreenLogo.scale-200.png</PackagePath>
+      <Modified>2017-12-13T20:53:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Clouds\OneDrive\Studium\WS 1718\HDI\App2\App2\images\SplashScreen.scale-200.png">
+      <PackagePath>images\SplashScreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-12-13T20:53:31.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Clouds\OneDrive\Studium\WS 1718\HDI\App2\App2\images\Square150x150Logo.scale-200.png">
+      <PackagePath>images\Square150x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-12-13T20:53:31.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Clouds\OneDrive\Studium\WS 1718\HDI\App2\App2\images\Square44x44Logo.scale-200.png">
+      <PackagePath>images\Square44x44Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-12-12T20:27:01.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Clouds\OneDrive\Studium\WS 1718\HDI\App2\App2\images\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <PackagePath>images\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-12-12T20:27:01.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Clouds\OneDrive\Studium\WS 1718\HDI\App2\App2\images\StoreLogo.png">
+      <PackagePath>images\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-12-12T20:27:01.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Clouds\OneDrive\Studium\WS 1718\HDI\App2\App2\images\Wide310x150Logo.scale-200.png">
+      <PackagePath>images\Wide310x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-12-12T20:27:01.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Clouds\OneDrive\Studium\WS 1718\HDI\App2\App2\js\hammer.min.js">
+      <PackagePath>js\hammer.min.js</PackagePath>
+      <Modified>2017-12-13T21:53:35.081</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Clouds\OneDrive\Studium\WS 1718\HDI\App2\App2\js\bootstrap.js">
+      <PackagePath>js\bootstrap.js</PackagePath>
+      <Modified>2016-07-25T13:53:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Clouds\OneDrive\Studium\WS 1718\HDI\App2\App2\js\bootstrap.min.js">
+      <PackagePath>js\bootstrap.min.js</PackagePath>
+      <Modified>2016-07-25T13:53:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Clouds\OneDrive\Studium\WS 1718\HDI\App2\App2\js\main.js">
+      <PackagePath>js\main.js</PackagePath>
+      <Modified>2017-12-13T22:30:07.646</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Clouds\OneDrive\Studium\WS 1718\HDI\App2\App2\js\npm.js">
+      <PackagePath>js\npm.js</PackagePath>
+      <Modified>2016-07-25T13:53:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Clouds\OneDrive\Studium\WS 1718\HDI\App2\App2\bin\Debug\ReverseMap\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-12-13T22:12:57.479</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
