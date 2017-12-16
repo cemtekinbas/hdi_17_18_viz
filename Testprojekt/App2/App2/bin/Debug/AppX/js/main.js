@@ -4,9 +4,23 @@
 
         Windows.Storage.FileIO.readTextAsync(file).then(function (text) {
             var parsedObject = JSON.parse(text);
-            document.getElementById("feldname1").innerHTML = (parsedObject[0].Sammlung);
-            document.getElementById("feldname2").innerHTML = (parsedObject[1].Sammlung);
-            document.getElementById("feldname3").innerHTML = (parsedObject[2].Sammlung);
+            var ikonographien = [];
+            var string = " ";
+            for (let artefakt of parsedObject) {
+                for (let ikono of artefakt.Ikonographie) {
+                    if (ikonographien.indexOf(ikono) == -1) {
+                        ikonographien.push(ikono);
+                    }                
+                }
+            }
+            //only to show array elements
+            for (let iko of ikonographien) {
+                string = string.concat(iko, " ");
+            }
+            document.getElementById("feldname1").innerHTML = string;
+            
+           // document.getElementById("feldname2").innerHTML = (parsedObject[1].Sammlung);
+            //document.getElementById("feldname3").innerHTML = (parsedObject[2].Sammlung);
         });
     });
 

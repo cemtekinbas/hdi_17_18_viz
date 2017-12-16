@@ -32,3 +32,20 @@ E:\Clouds\OneDrive\Studium\WS 1718\HDI\App2\App2\bld\Debug\qualifiers.txt
 E:\Clouds\OneDrive\Studium\WS 1718\HDI\App2\App2\bld\Debug\qualifiers.txt.intermediate
 E:\Clouds\OneDrive\Studium\WS 1718\HDI\App2\App2\bld\Debug\MultipleQualifiersPerDimensionFound.txt
 E:\Clouds\OneDrive\Studium\WS 1718\HDI\App2\App2\bld\Debug\ProjectArchitectures.txt
+C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\bin\Debug\ReverseMap\resources.pri
+C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\bin\Debug\AppxManifest.xml
+C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\bin\Debug\App2.build.appxrecipe
+C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\bld\Debug\App2.jsproj.CoreCompileInputs.cache
+C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\bld\Debug\ResourceHandlingTask.state
+C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\bld\Debug\priconfig.xml
+C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\bld\Debug\priconfig.xml.intermediate
+C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\bld\Debug\layout.resfiles
+C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\bld\Debug\layout.resfiles.intermediate
+C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\bld\Debug\resources.resfiles
+C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\bld\Debug\resources.resfiles.intermediate
+C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\bld\Debug\pri.resfiles
+C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\bld\Debug\pri.resfiles.intermediate
+C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\bld\Debug\qualifiers.txt
+C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\bld\Debug\qualifiers.txt.intermediate
+C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\bld\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\bld\Debug\ProjectArchitectures.txt
