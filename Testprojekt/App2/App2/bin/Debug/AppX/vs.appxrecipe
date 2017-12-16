@@ -32,7 +32,7 @@
     <AppXManifest Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-16T08:44:31.603</Modified>
+      <Modified>2017-12-16T15:45:59.360</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -100,9 +100,13 @@
       <PackagePath>fonts\glyphicons-halflings-regular.woff2</PackagePath>
       <Modified>2017-12-14T19:00:02.622</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\images\hunde.jpg">
+      <PackagePath>images\hunde.jpg</PackagePath>
+      <Modified>2017-12-11T06:54:03.345</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\index.html">
       <PackagePath>index.html</PackagePath>
-      <Modified>2017-12-15T19:09:29.543</Modified>
+      <Modified>2017-12-16T15:37:04.556</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\images\LockScreenLogo.scale-200.png">
       <PackagePath>images\LockScreenLogo.scale-200.png</PackagePath>
@@ -152,7 +156,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\js\main.js">
       <PackagePath>js\main.js</PackagePath>
-      <Modified>2017-12-16T08:44:19.818</Modified>
+      <Modified>2017-12-16T16:33:04.684</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\js\npm.js">
       <PackagePath>js\npm.js</PackagePath>
@@ -161,7 +165,7 @@
     <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\bin\Debug\ReverseMap\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-16T08:44:31.118</Modified>
+      <Modified>2017-12-16T15:45:58.522</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

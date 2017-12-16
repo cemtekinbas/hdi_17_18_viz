@@ -10,21 +10,37 @@
                 for (let ikono of artefakt.Ikonographie) {
                     if (ikonographien.indexOf(ikono) == -1) {
                         ikonographien.push(ikono);
-                    }                
-                }
+                    }
+                }                  
             }
-            //only to show array elements
+            
+            //only to show array elements       
             for (let iko of ikonographien) {
                 string = string.concat(iko, " ");
             }
             document.getElementById("feldname1").innerHTML = string;
-            
+
+            //add pictures to div
+            var zaehler = 0;
+            for (let picture of parsedObject) {               
+                 var img = document.createElement("img");
+                 img.src = (picture.Image);
+                img.id = zaehler;
+                img.alt = zaehler;
+                img.width = "50";
+                var foo = document.getElementById("feldname2");
+                foo.appendChild(img);
+                zaehler++;
+            }
+
            // document.getElementById("feldname2").innerHTML = (parsedObject[1].Sammlung);
-            //document.getElementById("feldname3").innerHTML = (parsedObject[2].Sammlung);
+            //document.getElementById("feldname3").innerHTML =(parsedObject[2].Sammlung);
         });
     });
 
 };
+
+
 function test() {
     var myElement = document.getElementById('feldname1');
 

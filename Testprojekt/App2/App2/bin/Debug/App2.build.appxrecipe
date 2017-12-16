@@ -73,6 +73,9 @@
     <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\fonts\glyphicons-halflings-regular.woff2">
       <PackagePath>fonts\glyphicons-halflings-regular.woff2</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\images\hunde.jpg">
+      <PackagePath>images\hunde.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\index.html">
       <PackagePath>index.html</PackagePath>
     </AppxPackagedFile>
