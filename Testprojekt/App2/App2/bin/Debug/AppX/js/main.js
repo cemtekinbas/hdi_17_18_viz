@@ -1,9 +1,12 @@
-﻿function load() {
+﻿var json;
+
+function load() {
     var url = new Windows.Foundation.Uri("ms-appx:///data/data.json");
     Windows.Storage.StorageFile.getFileFromApplicationUriAsync(url).then(function (file) {
 
         Windows.Storage.FileIO.readTextAsync(file).then(function (text) {
             var parsedObject = JSON.parse(text);
+            json = parsedObject;
             var ikonographien = [];
             var string = " ";
             for (let artefakt of parsedObject) {
@@ -21,22 +24,20 @@
             document.getElementById("feldname1").innerHTML = string;
 
             //add pictures to div
-            var zaehler = 0;
-            for (let picture of parsedObject) {
-                //if (picture != "") {}
+          /*  var zaehler = 0;
+            for (let picture of parsedObject) {               
                  var img = document.createElement("img");
                  img.src = (picture.Image);
                 img.id = zaehler;
                 img.alt = zaehler;
                 img.width = "50";
- 
                 var foo = document.getElementById("feldname2");
                 foo.appendChild(img);
                 zaehler++;
-            }
+            }*/
 
            // document.getElementById("feldname2").innerHTML = (parsedObject[1].Sammlung);
-            //document.getElementById("feldname3").innerHTML = (parsedObject[2].Sammlung);
+            //document.getElementById("feldname3").innerHTML =(parsedObject[2].Sammlung);
         });
     });
 
@@ -53,10 +54,23 @@ function test() {
     // listen to events...
     mc.on("panleft panright tap press", function (ev) {
         var span = document.getElementById("feldname1");
-        span.style.fontSize = "50px";
+        document.getElementById("feldname1").innerHTML = "";
+        //add pictures to div
+        var zaehler = 0;
+        for (let picture of json) {
+            if (picture.Image != undefined && !picture.Image.includes("placeholder.svg")) {        
+                var img = document.createElement("img");
+                img.src = (picture.Image);
+                img.id = zaehler;
+                img.alt = zaehler;
+                img.width = "50";
+                span.appendChild(img);              
+            }
+            zaehler++;
+        }            
     });
 
-    if (mc.on("tap") == "tap") {
+    /*if (mc.on("tap") == "tap") {
 
-    }
+    }*/
 }

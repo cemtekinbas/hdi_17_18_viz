@@ -32,7 +32,7 @@
     <AppXManifest Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-16T15:45:59.360</Modified>
+      <Modified>2017-12-17T07:15:30.209</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -74,7 +74,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\data\data.json">
       <PackagePath>data\data.json</PackagePath>
-      <Modified>2017-12-15T18:52:06.864</Modified>
+      <Modified>2017-12-17T07:44:56.637</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\data\mkg-lido-excerpt.json">
       <PackagePath>data\mkg-lido-excerpt.json</PackagePath>
@@ -100,13 +100,9 @@
       <PackagePath>fonts\glyphicons-halflings-regular.woff2</PackagePath>
       <Modified>2017-12-14T19:00:02.622</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\images\hunde.jpg">
-      <PackagePath>images\hunde.jpg</PackagePath>
-      <Modified>2017-12-11T06:54:03.345</Modified>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\index.html">
       <PackagePath>index.html</PackagePath>
-      <Modified>2017-12-16T15:37:04.556</Modified>
+      <Modified>2017-12-17T07:35:02.312</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\images\LockScreenLogo.scale-200.png">
       <PackagePath>images\LockScreenLogo.scale-200.png</PackagePath>
@@ -156,7 +152,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\js\main.js">
       <PackagePath>js\main.js</PackagePath>
-      <Modified>2017-12-16T16:33:04.684</Modified>
+      <Modified>2017-12-17T07:54:55.880</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\js\npm.js">
       <PackagePath>js\npm.js</PackagePath>
@@ -165,7 +161,7 @@
     <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\bin\Debug\ReverseMap\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-16T15:45:58.522</Modified>
+      <Modified>2017-12-17T07:15:29.786</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
