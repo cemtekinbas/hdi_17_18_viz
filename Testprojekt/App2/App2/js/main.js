@@ -1,43 +1,29 @@
 ﻿var json;
 
 function load() {
-    var url = new Windows.Foundation.Uri("ms-appx:///data/data.json");
+    var url = new Windows.Foundation.Uri("ms-appx:///data/exampledata.json");
     Windows.Storage.StorageFile.getFileFromApplicationUriAsync(url).then(function (file) {
 
         Windows.Storage.FileIO.readTextAsync(file).then(function (text) {
+           
             var parsedObject = JSON.parse(text);
             json = parsedObject;
-            var ikonographien = [];
-            var string = " ";
+            var ikonographien = new Array(2);
             for (let artefakt of parsedObject) {
-                for (let ikono of artefakt.Ikonographie) {
+                for (let ikono of artefakt.Ikonographie) {             
                     if (ikonographien.indexOf(ikono) == -1) {
-                        ikonographien.push(ikono);
-                    }
-                }                  
+                        //für Word Cloud: wert und größe
+                        ikonographien.push([ikono, "10"]);
+                    }                            
+                }  
             }
-            
-            //only to show array elements       
-            for (let iko of ikonographien) {
-                string = string.concat(iko, " ");
+            list = [];
+            for (var i in ikonographien) {
+                list.push(ikonographien[i], ikonographien[i]);
             }
-            document.getElementById("feldname1").innerHTML = string;
 
-            //add pictures to div
-          /*  var zaehler = 0;
-            for (let picture of parsedObject) {               
-                 var img = document.createElement("img");
-                 img.src = (picture.Image);
-                img.id = zaehler;
-                img.alt = zaehler;
-                img.width = "50";
-                var foo = document.getElementById("feldname2");
-                foo.appendChild(img);
-                zaehler++;
-            }*/
-
-           // document.getElementById("feldname2").innerHTML = (parsedObject[1].Sammlung);
-            //document.getElementById("feldname3").innerHTML =(parsedObject[2].Sammlung);
+            WordCloud.minFontSize = "15px"
+            WordCloud(document.getElementById('word_cloud'), { list: list });            
         });
     });
 
@@ -45,7 +31,7 @@ function load() {
 
 
 function test() {
-    var myElement = document.getElementById('feldname1');
+    var myElement = document.getElementById('word_cloud');
 
     // create a simple instance
     // by default, it only adds horizontal recognizers
@@ -54,7 +40,7 @@ function test() {
     // listen to events...
     mc.on("panleft panright tap press", function (ev) {
         var span = document.getElementById("feldname1");
-        document.getElementById("feldname1").innerHTML = "";
+        document.getElementById("word_cloud").innerHTML = "";
         //add pictures to div
         var zaehler = 0;
         for (let picture of json) {

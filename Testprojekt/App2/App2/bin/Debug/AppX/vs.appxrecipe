@@ -32,7 +32,7 @@
     <AppXManifest Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-17T07:15:30.209</Modified>
+      <Modified>2017-12-17T09:39:42.222</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -76,6 +76,10 @@
       <PackagePath>data\data.json</PackagePath>
       <Modified>2017-12-17T07:44:56.637</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\data\exampledata.json">
+      <PackagePath>data\exampledata.json</PackagePath>
+      <Modified>2017-12-17T09:39:14.367</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\data\mkg-lido-excerpt.json">
       <PackagePath>data\mkg-lido-excerpt.json</PackagePath>
       <Modified>2017-12-14T19:00:02.607</Modified>
@@ -102,7 +106,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\index.html">
       <PackagePath>index.html</PackagePath>
-      <Modified>2017-12-17T07:35:02.312</Modified>
+      <Modified>2017-12-17T13:42:28.653</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\images\LockScreenLogo.scale-200.png">
       <PackagePath>images\LockScreenLogo.scale-200.png</PackagePath>
@@ -152,16 +156,20 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\js\main.js">
       <PackagePath>js\main.js</PackagePath>
-      <Modified>2017-12-17T07:54:55.880</Modified>
+      <Modified>2017-12-17T13:48:23.992</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\js\npm.js">
       <PackagePath>js\npm.js</PackagePath>
       <Modified>2017-12-14T19:00:02.656</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\js\wordcloud2.js">
+      <PackagePath>js\wordcloud2.js</PackagePath>
+      <Modified>2017-12-17T09:33:24.967</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\bin\Debug\ReverseMap\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-17T07:15:29.786</Modified>
+      <Modified>2017-12-17T09:39:41.922</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

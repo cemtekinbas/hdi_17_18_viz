@@ -8,6 +8,7 @@ css\bootstrap-theme.min.css
 css\bootstrap-theme.min.css.map
 css\default.css
 data\data.json
+data\exampledata.json
 data\mkg-lido-excerpt.json
 fonts\glyphicons-halflings-regular.eot
 fonts\glyphicons-halflings-regular.svg
@@ -27,3 +28,4 @@ js\bootstrap.min.js
 js\hammer.min.js
 js\main.js
 js\npm.js
+js\wordcloud2.js
