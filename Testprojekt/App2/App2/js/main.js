@@ -20,6 +20,9 @@ function load() {
             list = [];
             for (var i in arr) {
                 //random number for text size in word cloud
+               // var randomNumber = Math.floor((Math.random() * 30) + 10);
+               //var size = "" + randomNumber;
+                list.push([arr[i],"30"]);
             }
             
            
