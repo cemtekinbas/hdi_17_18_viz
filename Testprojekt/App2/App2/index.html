@@ -25,6 +25,13 @@
     <![endif]-->
     <!-- Custom styles for this template -->
     <link href="css/default.css" rel="stylesheet">
+    <style>
+        #word_cloud > span:hover {
+            text-shadow: 0 0 10px, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff;
+            opacity: 0.5;
+            font-size:larger;
+        }
+    </style>
 </head>
 <!-- NAVBAR
 ================================================== -->
@@ -37,8 +44,7 @@
         <!-- Three columns of text below the carousel -->
         <div class="row">
             <div id="feldname1">
-              
-                <canvas id="word_cloud" class="word_cloud" width="400" height="400"></canvas>
+                <canvas id="word_cloud" class="word_cloud" width="1000" height="500"></canvas>
             </div>
             <div id="feldname2"></div>
         </div><!-- /.row -->

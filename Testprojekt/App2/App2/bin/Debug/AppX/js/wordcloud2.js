@@ -412,7 +412,7 @@ if (!window.clearImmediate) {
 
             shuffle: true,
 
-            rotateRatio: 0.1,
+            rotateRatio: 0,
 
 
 
@@ -1545,7 +1545,11 @@ if (!window.clearImmediate) {
                     // drawText on DIV element
 
                     var span = document.createElement('span');
-
+                    //var number = 0;
+                    //var id = "" + number;
+                    //span.id=id;
+                    //number++;
+                    //console.log(span.id);
                     var transformRule = '';
 
                     transformRule = 'rotate(' + (- rotateDeg / Math.PI * 180) + 'deg) ';
@@ -2213,7 +2217,6 @@ if (!window.clearImmediate) {
                     canvas.addEventListener('touchend', touchend);
 
                     canvas.style.webkitTapHighlightColor = 'rgba(0, 0, 0, 0)';
-
                 }
 
 
