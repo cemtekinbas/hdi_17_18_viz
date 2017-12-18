@@ -1,7 +1,7 @@
 ﻿var json;
 
 function load() {
-    var url = new Windows.Foundation.Uri("ms-appx:///data/exampledata.json");
+    var url = new Windows.Foundation.Uri("ms-appx:///data/data.json");
     Windows.Storage.StorageFile.getFileFromApplicationUriAsync(url).then(function (file) {
 
         Windows.Storage.FileIO.readTextAsync(file).then(function (text) {
@@ -25,9 +25,15 @@ function load() {
                 list.push([arr[i],"30"]);
             }
             
-           
+            var string = "";
             WordCloud.minFontSize = "15px"
-            WordCloud(document.getElementById('word_cloud'), { list: list });            
+            WordCloud(document.getElementById('word_cloud'), {
+                list: list,
+                click: function (item) {
+                    //item[0] is the word
+                    getPictures(item[0]);              
+                }
+            });                          
         });
     });
 
@@ -65,6 +71,35 @@ function test() {
 
     }*/
 }
+
+function getPictures(clickedIkono) {
+    var myElement = document.getElementById('feldname1');
+    myElement.innerHTML = "";
+
+        //add pictures to div
+    var zaehler = 0;
+    var pictures = [];
+    for (let artefakt of json) {
+        for (let ikono of artefakt.Ikonographie) {
+            if (ikono == clickedIkono) {
+                pictures.push(artefakt.Image);
+            }
+        }
+    }
+
+    for (let picture of pictures) {
+        if (picture != undefined && !picture.includes("placeholder.svg")) {
+            var img = document.createElement("img");
+            img.src = (picture);
+            img.id = clickedIkono+zaehler;
+            img.width = "50";
+            myElement.appendChild(img);
+        }
+        zaehler++;
+    }
+
+}
+
 function removeDuplicates(arr) {
     var uniques = [];
     var itemsFound = {};
