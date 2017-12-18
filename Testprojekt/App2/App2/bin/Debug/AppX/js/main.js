@@ -20,15 +20,16 @@ function load() {
             list = [];
             for (var i in arr) {
                 //random number for text size in word cloud
-               // var randomNumber = Math.floor((Math.random() * 30) + 10);
-               //var size = "" + randomNumber;
-                list.push([arr[i],"30"]);
+               var randomNumber = Math.floor((Math.random() * 50) + 10);
+               var size = "" + randomNumber;
+                list.push([arr[i],size]);
             }
             
             var string = "";
             WordCloud.minFontSize = "15px"
             WordCloud(document.getElementById('word_cloud'), {
                 list: list,
+                drawOutOfBound: false,
                 click: function (item) {
                     //item[0] is the word
                     getPictures(item[0]);              
@@ -73,7 +74,7 @@ function test() {
 }
 
 function getPictures(clickedIkono) {
-    var myElement = document.getElementById('feldname1');
+    var myElement = document.getElementById('feldname2');
     myElement.innerHTML = "";
 
         //add pictures to div
@@ -91,8 +92,9 @@ function getPictures(clickedIkono) {
         if (picture != undefined && !picture.includes("placeholder.svg")) {
             var img = document.createElement("img");
             img.src = (picture);
-            img.id = clickedIkono+zaehler;
-            img.width = "50";
+            img.id = clickedIkono + zaehler;
+            img.className += "space";
+            img.height = "200";
             myElement.appendChild(img);
         }
         zaehler++;
