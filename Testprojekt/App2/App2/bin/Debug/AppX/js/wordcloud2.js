@@ -366,7 +366,7 @@ if (!window.clearImmediate) {
 
             fontWeight: 'normal',
 
-            color: 'random-dark',
+            color: 'random-light',
 
             minSize: 0, // 0 to disable
 

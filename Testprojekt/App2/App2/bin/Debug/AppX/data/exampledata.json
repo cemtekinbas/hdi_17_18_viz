@@ -1,584 +1,194 @@
 ﻿[
   {
-    "Sammlung": "Fotografie und neue Medien",
-    "Orte": [
-      { "name": "Flensburg" },
-      {
-        "geonamesURL": "http://sws.geonames.org/6559171/",
-        "name": "München"
-      }
-    ],
-    "Technik": [
-      "Heliogravüre",
-      "Buchdruck",
-      "Heliogravüre",
-      "Buchdruck"
-    ],
-    "Stil": "",
-    "Sachgruppe": "Reisefotografie",
-    "Material": [
-      "Papier",
-      "Pappe",
-      "Leinenfaser",
-      "Papier",
-      "Pappe",
-      "Leinenfaser"
-    ],
-    "Ikonographie": [
-      "Land, Region",
-      "Matrose, Marinesoldat",
-      "Segelschiff, Segelboot"
-    ],
-    "Personen": [
-      {
-        "frühestes Datum": "1840",
-        "spätestes Datum": "1926",
-        "Name": "Dreesen, Wilhelm",
-        "Rolle": "Fotograf/in"
-      },
-      {
-        "Name": "Kunst-Anstalt J. B. Obernetter",
-        "Rolle": "Druckerei / Drucker/in"
-      }
-    ],
-    "Image": "http://resources.digicult-museen.net/dam/provided_image/m57d3013f62aa9",
-    "Objektbezeichnung": "Aus Schleswig-Holstein"
+    "Ikonographie": "Wohnhaus, Etagenhaus",
+    "Anzahl der Datensätze pro Ikonographie": 196
   },
   {
-    "Sammlung": "Moderne",
-    "Orte": [
-      { "name": "Stockholm" },
-      { "name": "Stockholm" }
-    ],
-    "Technik": [
-      "Unterglasurdekor",
-      "bemalt (Keramik)"
-    ],
-    "Stil": "Jugendstil",
-    "Sachgruppe": "Zierobjekte",
-    "Material": [ "Fayence" ],
-    "Ikonographie": [
-      "Fische (Tiere)",
-      "Pflanzen, Vegetation",
-      "Meer"
-    ],
-    "Personen": [
-      {
-        "frühestes Datum": "1862",
-        "spätestes Datum": "1914",
-        "Name": "Wallander, Alf",
-        "Rolle": "Künstler/in"
-      },
-      {
-        "Name": "Rörstrand Porzellan- und Fayencenmanfaktur",
-        "Rolle": "Hersteller/in (Firma/Fabrikant/Manufaktur)"
-      }
-    ],
-    "Image": "http://resources.digicult-museen.net/dam/provided_image/m57d2e02270223",
-    "Objektbezeichnung": "Bodenvase"
+    "Ikonographie": "Werk der angewandten Kunst (Metalle)",
+    "Anzahl der Datensätze pro Ikonographie": 108
   },
   {
-    "Sammlung": "Moderne",
-    "Orte": [
-      {
-        "geonamesURL": "http://sws.geonames.org/2988507/",
-        "name": "Paris"
-      }
-    ],
-    "Technik": [ "Bleiglasur" ],
-    "Stil": "Jugendstil",
-    "Sachgruppe": "Zierobjekte",
-    "Material": [ "Steinzeug" ],
-    "Ikonographie": [ "Pflanzen, Vegetation" ],
-    "Personen": [
-      {
-        "frühestes Datum": "1857",
-        "spätestes Datum": "1940",
-        "Name": "Delaherche, Auguste",
-        "Rolle": "Künstler/in"
-      }
-    ],
-    "Image": "http://resources.digicult-museen.net/dam/provided_image/m57d2ea912e5ed",
-    "Objektbezeichnung": "Vase mit Platanendekor"
+    "Ikonographie": "Tierornamente",
+    "Anzahl der Datensätze pro Ikonographie": 163
   },
   {
-    "Sammlung": "Moderne",
-    "Orte": [ { "name": "Versailles" } ],
-    "Technik": [
-      "glasiert",
-      "geschliffen"
-    ],
-    "Stil": "Jugendstil",
-    "Sachgruppe": "Tafelzubehör",
-    "Material": [ "Steinzeug" ],
-    "Ikonographie": [],
-    "Personen": [
-      {
-        "Name": "Atelier de Glatigny",
-        "Rolle": "Künstlergruppe/Künstlerkollektiv"
-      }
-    ],
-    "Image": "http://resources.digicult-museen.net/dam/provided_image/m57d2ea920be17",
-    "Objektbezeichnung": "Dose mit zwei Henkeln"
+    "Ikonographie": "Tiere als Ornament",
+    "Anzahl der Datensätze pro Ikonographie": 183
   },
   {
-    "Sammlung": "Moderne",
-    "Orte": [ { "name": "Versailles" } ],
-    "Technik": [
-      "glasiert",
-      "geschliffen"
-    ],
-    "Stil": "Jugendstil",
-    "Sachgruppe": "Zierobjekte",
-    "Material": [ "Porzellan" ],
-    "Ikonographie": [],
-    "Personen": [
-      {
-        "Name": "Atelier de Glatigny",
-        "Rolle": "Künstlergruppe/Künstlerkollektiv"
-      }
-    ],
-    "Image": "http://resources.digicult-museen.net/dam/provided_image/m57d2ea92c0752",
-    "Objektbezeichnung": "Kumme"
+    "Ikonographie": "städtisches Leben",
+    "Anzahl der Datensätze pro Ikonographie": 143
   },
   {
-    "Sammlung": "Moderne",
-    "Orte": [ { "name": "Versailles" } ],
-    "Technik": [
-      "Bleiglasur",
-      "geschliffen"
-    ],
-    "Stil": "Jugendstil",
-    "Sachgruppe": "Zierobjekte",
-    "Material": [ "Porzellan" ],
-    "Ikonographie": [],
-    "Personen": [
-      {
-        "Name": "Atelier de Glatigny",
-        "Rolle": "Künstlergruppe/Künstlerkollektiv"
-      }
-    ],
-    "Image": "http://resources.digicult-museen.net/dam/provided_image/m57d2ea934ef31",
-    "Objektbezeichnung": "Beutelvase"
+    "Ikonographie": "Segelschiff, Segelboot",
+    "Anzahl der Datensätze pro Ikonographie": 116
   },
   {
-    "Sammlung": "Moderne",
-    "Orte": [ { "name": "Versailles" } ],
-    "Technik": [ "glasiert" ],
-    "Stil": "Jugendstil",
-    "Sachgruppe": "Zierobjekte",
-    "Material": [ "Porzellan" ],
-    "Ikonographie": [],
-    "Personen": [
-      {
-        "Name": "Atelier de Glatigny",
-        "Rolle": "Künstlergruppe/Künstlerkollektiv"
-      }
-    ],
-    "Image": "http://resources.digicult-museen.net/dam/provided_image/m57d2ea93ce1d3",
-    "Objektbezeichnung": "Kugelvase"
+    "Ikonographie": "Schwert",
+    "Anzahl der Datensätze pro Ikonographie": 137
   },
   {
-    "Sammlung": "Moderne",
-    "Orte": [ { "name": "Versailles" } ],
-    "Technik": [
-      "glasiert",
-      "geschliffen"
-    ],
-    "Stil": "Jugendstil",
-    "Sachgruppe": "Zierobjekte",
-    "Material": [ "Porzellan" ],
-    "Ikonographie": [],
-    "Personen": [
-      {
-        "Name": "Atelier de Glatigny",
-        "Rolle": "Künstlergruppe/Künstlerkollektiv"
-      }
-    ],
-    "Image": "http://resources.digicult-museen.net/dam/provided_image/m57d2ea9461c15",
-    "Objektbezeichnung": "Kleine Stangenvase"
+    "Ikonographie": "Schiffe",
+    "Anzahl der Datensätze pro Ikonographie": 137
   },
   {
-    "Sammlung": "Moderne",
-    "Orte": [ { "name": "Vallauris" } ],
-    "Technik": [ "glasiert" ],
-    "Stil": "Jugendstil",
-    "Sachgruppe": "Keramik",
-    "Material": [ "Steinzeug" ],
-    "Ikonographie": [],
-    "Personen": [
-      {
-        "frühestes Datum": "1844",
-        "spätestes Datum": "1917",
-        "Name": "Massier, Clément",
-        "Rolle": "Künstler/in"
-      }
-    ],
-    "Image": "http://resources.digicult-museen.net/dam/provided_image/m57d2ea94ec32d",
-    "Objektbezeichnung": "Vase"
+    "Ikonographie": "Säule, Pfeiler (Architektur)",
+    "Anzahl der Datensätze pro Ikonographie": 115
   },
   {
-    "Sammlung": "Moderne",
-    "Orte": [
-      { "name": "Cincinnati (Ohio)" },
-      { "name": "Cincinnati (Ohio)" }
-    ],
-    "Technik": [ "Bleiglasur" ],
-    "Stil": "Jugendstil",
-    "Sachgruppe": "Zierobjekte",
-    "Material": [
-      "Irdenware",
-      "Ton"
-    ],
-    "Ikonographie": [],
-    "Personen": [
-      {
-        "Name": "Rookwood Pottery",
-        "Rolle": "Hersteller/in (Firma/Fabrikant/Manufaktur)"
-      },
-      {
-        "frühestes Datum": "1862",
-        "spätestes Datum": "1925",
-        "Name": "Valentien, Albert R.",
-        "Rolle": "Maler/in"
-      }
-    ],
-    "Image": "http://resources.digicult-museen.net/dam/provided_image/m57d2ea95a51b0",
-    "Objektbezeichnung": "Vase"
+    "Ikonographie": "Reisen/Tourismus",
+    "Anzahl der Datensätze pro Ikonographie": 101
   },
   {
-    "Sammlung": "Moderne",
-    "Orte": [
-      { "name": "Cincinnati (Ohio)" },
-      { "name": "Cincinnati (Ohio)" }
-    ],
-    "Technik": [
-      "bemalt (Keramik)",
-      "Bleiglasur"
-    ],
-    "Stil": "Jugendstil",
-    "Sachgruppe": "Keramik",
-    "Material": [
-      "Irdenware",
-      "Ton"
-    ],
-    "Ikonographie": [ "Pflanzen, Vegetation" ],
-    "Personen": [
-      {
-        "Name": "Rookwood Pottery",
-        "Rolle": "Hersteller/in (Firma/Fabrikant/Manufaktur)"
-      },
-      {
-        "frühestes Datum": "1862",
-        "spätestes Datum": "1925",
-        "Name": "Valentien, Albert R.",
-        "Rolle": "Maler/in"
-      }
-    ],
-    "Image": "http://resources.digicult-museen.net/dam/provided_image/m57d2ea9655a82",
-    "Objektbezeichnung": "Vase"
+    "Ikonographie": "Profanarchitektur",
+    "Anzahl der Datensätze pro Ikonographie": 141
   },
   {
-    "Sammlung": "Moderne",
-    "Orte": [
-      {
-        "geonamesURL": "http://sws.geonames.org/2988507/",
-        "name": "Paris"
-      }
-    ],
-    "Technik": [
-      "glasiert",
-      "Seladon",
-      "Kupferglasur"
-    ],
-    "Stil": "Jugendstil",
-    "Sachgruppe": "Zierobjekte",
-    "Material": [ "Steinzeug" ],
-    "Ikonographie": [],
-    "Personen": [
-      {
-        "frühestes Datum": "1857",
-        "spätestes Datum": "1940",
-        "Name": "Delaherche, Auguste",
-        "Rolle": "Künstler/in"
-      }
-    ],
-    "Image": "http://resources.digicult-museen.net/dam/provided_image/m57d2ea9705538",
-    "Objektbezeichnung": "Schale in Blütenform"
+    "Ikonographie": "Pflanzen, Vegetation",
+    "Anzahl der Datensätze pro Ikonographie": 157
   },
   {
-    "Sammlung": "Moderne",
-    "Orte": [ { "name": "Vallauris" } ],
-    "Technik": [
-      "glasiert",
-      "Lüsterdekor"
-    ],
-    "Stil": "Jugendstil",
-    "Sachgruppe": "Tafelzubehör",
-    "Material": [ "Steinzeug" ],
-    "Ikonographie": [ "Insekten" ],
-    "Personen": [
-      {
-        "frühestes Datum": "1836",
-        "spätestes Datum": "1907",
-        "Name": "Massier, Honoré Delphin",
-        "Rolle": "Künstler/in"
-      }
-    ],
-    "Image": "http://resources.digicult-museen.net/dam/provided_image/m57d2ea979dfd7",
-    "Objektbezeichnung": "Fläschchen"
+    "Ikonographie": "Pflanzen und Kräuter",
+    "Anzahl der Datensätze pro Ikonographie": 182
   },
   {
-    "Sammlung": "Moderne",
-    "Orte": [
-      { "name": "Sèvres (Gemeinde)" },
-      { "name": "Sèvres (Gemeinde)" }
-    ],
-    "Technik": [
-      "glasiert",
-      "Kupferglasur"
-    ],
-    "Stil": "Jugendstil",
-    "Sachgruppe": "Trink- und Schankgeschirr",
-    "Material": [ "Weichporzellan" ],
-    "Ikonographie": [ "Gemüse" ],
-    "Personen": [
-      {
-        "frühestes Datum": "1851",
-        "spätestes Datum": "1938",
-        "Name": "Doat, Taxile",
-        "Rolle": "Künstler/in"
-      },
-      {
-        "Name": "Porzellanmanufaktur Sèvres",
-        "Rolle": "Hersteller/in (Firma/Fabrikant/Manufaktur)"
-      }
-    ],
-    "Image": "http://resources.digicult-museen.net/dam/provided_image/m57d2ea9898680",
-    "Objektbezeichnung": "Kürbisförmige Flasche mit Stöpsel"
+    "Ikonographie": "Pferd",
+    "Anzahl der Datensätze pro Ikonographie": 124
   },
   {
-    "Sammlung": "Moderne",
-    "Orte": [
-      { "name": "Sèvres (Gemeinde)" },
-      { "name": "Sèvres (Gemeinde)" }
-    ],
-    "Technik": [
-      "bemalt",
-      "glasiert"
-    ],
-    "Stil": "Jugendstil",
-    "Sachgruppe": "Büromaterialien",
-    "Material": [ "Weichporzellan" ],
-    "Ikonographie": [
-      "Wassergottheiten",
-      "Welle",
-      "Muschel",
-      "Meer"
-    ],
-    "Personen": [
-      {
-        "frühestes Datum": "1851",
-        "spätestes Datum": "1938",
-        "Name": "Doat, Taxile",
-        "Rolle": "Künstler/in"
-      },
-      {
-        "Name": "Porzellanmanufaktur Sèvres",
-        "Rolle": "Hersteller/in (Firma/Fabrikant/Manufaktur)"
-      }
-    ],
-    "Image": "http://resources.digicult-museen.net/dam/provided_image/m57d2ea9969042",
-    "Objektbezeichnung": "La Mer"
+    "Ikonographie": "Museum",
+    "Anzahl der Datensätze pro Ikonographie": 172
   },
   {
-    "Sammlung": "Moderne",
-    "Orte": [
-      {
-        "geonamesURL": "http://sws.geonames.org/2988507/",
-        "name": "Paris"
-      }
-    ],
-    "Technik": [
-      "Zinnglasur",
-      "glasiert"
-    ],
-    "Stil": "Jugendstil",
-    "Sachgruppe": "Zierobjekte",
-    "Material": [ "Steinzeug" ],
-    "Ikonographie": [],
-    "Personen": [
-      {
-        "frühestes Datum": "1861",
-        "spätestes Datum": "1920",
-        "Name": "Jeanneney, Paul",
-        "Rolle": "Künstler/in"
-      }
-    ],
-    "Image": "http://resources.digicult-museen.net/dam/provided_image/m57d2ea9a0a59d",
-    "Objektbezeichnung": "Vase"
+    "Ikonographie": "Möbel und Hausrat",
+    "Anzahl der Datensätze pro Ikonographie": 155
   },
   {
-    "Sammlung": "Moderne",
-    "Orte": [
-      {
-        "geonamesURL": "http://sws.geonames.org/2988507/",
-        "name": "Paris"
-      }
-    ],
-    "Technik": [
-      "Feldspatglasur",
-      "Kupferglasur"
-    ],
-    "Stil": "Jugendstil",
-    "Sachgruppe": "Zierobjekte",
-    "Material": [ "Steinzeug" ],
-    "Ikonographie": [],
-    "Personen": [
-      {
-        "frühestes Datum": "1861",
-        "spätestes Datum": "1920",
-        "Name": "Jeanneney, Paul",
-        "Rolle": "Künstler/in"
-      }
-    ],
-    "Image": "http://resources.digicult-museen.net/dam/provided_image/m57d2ea9a8e234",
-    "Objektbezeichnung": "Doppelbalustervase"
+    "Ikonographie": "Meer",
+    "Anzahl der Datensätze pro Ikonographie": 110
   },
   {
-    "Sammlung": "Moderne",
-    "Orte": [
-      {
-        "geonamesURL": "http://sws.geonames.org/2988507/",
-        "name": "Paris"
-      }
-    ],
-    "Technik": [
-      "Zinnglasur",
-      "glasiert"
-    ],
-    "Stil": "Jugendstil",
-    "Sachgruppe": "Zierobjekte",
-    "Material": [ "Steinzeug" ],
-    "Ikonographie": [],
-    "Personen": [
-      {
-        "frühestes Datum": "1861",
-        "spätestes Datum": "1920",
-        "Name": "Jeanneney, Paul",
-        "Rolle": "Künstler/in"
-      }
-    ],
-    "Image": "http://resources.digicult-museen.net/dam/provided_image/m57d2ea9b18372",
-    "Objektbezeichnung": "Vase"
+    "Ikonographie": "Mädchen",
+    "Anzahl der Datensätze pro Ikonographie": 147
   },
   {
-    "Sammlung": "Moderne",
-    "Orte": [
-      {
-        "geonamesURL": "http://sws.geonames.org/2988507/",
-        "name": "Paris"
-      }
-    ],
-    "Technik": [
-      "Feldspatglasur",
-      "Kupferglasur"
-    ],
-    "Stil": "Jugendstil",
-    "Sachgruppe": "Hauswirtschaft",
-    "Material": [
-      "Steinzeug",
-      "Elfenbein"
-    ],
-    "Ikonographie": [],
-    "Personen": [
-      {
-        "frühestes Datum": "1861",
-        "spätestes Datum": "1920",
-        "Name": "Jeanneney, Paul",
-        "Rolle": "Künstler/in"
-      }
-    ],
-    "Image": "http://resources.digicult-museen.net/dam/provided_image/m57d2ea9badfdf",
-    "Objektbezeichnung": "Dose mit geriefelter Wandung"
+    "Ikonographie": "Laub- und Bandelwerk",
+    "Anzahl der Datensätze pro Ikonographie": 176
   },
   {
-    "Sammlung": "Moderne",
-    "Orte": [
-      { "name": "Bourg-la-Reine" },
-      {
-        "geonamesURL": "http://sws.geonames.org/2988507/",
-        "name": "Paris"
-      }
-    ],
-    "Technik": [
-      "glasiert",
-      "montiert",
-      "geschliffen"
-    ],
-    "Stil": "Jugendstil",
-    "Sachgruppe": "Ess- und Serviergeschirr",
-    "Material": [
-      "Steinzeug",
-      "Silber"
-    ],
-    "Ikonographie": [ "Pflanzenornamente" ],
-    "Personen": [
-      {
-        "frühestes Datum": "1844",
-        "spätestes Datum": "1910",
-        "Name": "Dalpayrat, Pierre Adrien",
-        "Rolle": "Künstler/in"
-      },
-      {
-        "frühestes Datum": "1875",
-        "spätestes Datum": "1920",
-        "Name": "Bing, Marcel",
-        "Rolle": "Silberschmied/in"
-      }
-    ],
-    "Image": "http://resources.digicult-museen.net/dam/provided_image/m57d2ea9c88e9b",
-    "Objektbezeichnung": "Becher mit Silberfassung"
+    "Ikonographie": "Landstraße, Weg, Pfad",
+    "Anzahl der Datensätze pro Ikonographie": 106
   },
   {
-    "Sammlung": "Moderne",
-    "Orte": [
-      {
-        "geonamesURL": "http://sws.geonames.org/2988507/",
-        "name": "Paris"
-      },
-      {
-        "geonamesURL": "http://sws.geonames.org/2988507/",
-        "name": "Paris"
-      }
-    ],
-    "Technik": [
-      "glasiert",
-      "geätzt",
-      "montiert"
-    ],
-    "Stil": "Jugendstil",
-    "Sachgruppe": "Keramik",
-    "Material": [
-      "Steinzeug",
-      "Silber"
-    ],
-    "Ikonographie": [ "Bäume, Sträucher" ],
-    "Personen": [
-      {
-        "frühestes Datum": "1853",
-        "spätestes Datum": "1918",
-        "Name": "Baudin, Eugène",
-        "Rolle": "Künstler/in"
-      },
-      {
-        "frühestes Datum": "1861",
-        "spätestes Datum": "1933",
-        "Name": "Gaillard, Lucien",
-        "Rolle": "Silberschmied/in"
-      }
-    ],
-    "Image": "http://resources.digicult-museen.net/dam/provided_image/m57d2ea9d63ce6",
-    "Objektbezeichnung": "Vase mit Platanendekor"
+    "Ikonographie": "Landschaften (gemäßigte Zone)",
+    "Anzahl der Datensätze pro Ikonographie": 136
+  },
+  {
+    "Ikonographie": "Küste",
+    "Anzahl der Datensätze pro Ikonographie": 102
+  },
+  {
+    "Ikonographie": "Künstler",
+    "Anzahl der Datensätze pro Ikonographie": 105
+  },
+  {
+    "Ikonographie": "Kircheninneres",
+    "Anzahl der Datensätze pro Ikonographie": 166
+  },
+  {
+    "Ikonographie": "Kirchenausstattung",
+    "Anzahl der Datensätze pro Ikonographie": 186
+  },
+  {
+    "Ikonographie": "Kind",
+    "Anzahl der Datensätze pro Ikonographie": 135
+  },
+  {
+    "Ikonographie": "Kartusche (Ornament)",
+    "Anzahl der Datensätze pro Ikonographie": 117
+  },
+  {
+    "Ikonographie": "junger Mann, Jugendlicher",
+    "Anzahl der Datensätze pro Ikonographie": 114
+  },
+  {
+    "Ikonographie": "Junge",
+    "Anzahl der Datensätze pro Ikonographie": 110
+  },
+  {
+    "Ikonographie": "Interieur",
+    "Anzahl der Datensätze pro Ikonographie": 187
+  },
+  {
+    "Ikonographie": "historisches Ereignis, Situation",
+    "Anzahl der Datensätze pro Ikonographie": 111
+  },
+  {
+    "Ikonographie": "Hafen",
+    "Anzahl der Datensätze pro Ikonographie": 120
+  },
+  {
+    "Ikonographie": "Gewässer",
+    "Anzahl der Datensätze pro Ikonographie": 181
+  },
+  {
+    "Ikonographie": "Gärten und Parks",
+    "Anzahl der Datensätze pro Ikonographie": 152
+  },
+  {
+    "Ikonographie": "Früchte",
+    "Anzahl der Datensätze pro Ikonographie": 138
+  },
+  {
+    "Ikonographie": "Fluss",
+    "Anzahl der Datensätze pro Ikonographie": 181
+  },
+  {
+    "Ikonographie": "Fassadendekorationen (Architektur)",
+    "Anzahl der Datensätze pro Ikonographie": 121
+  },
+  {
+    "Ikonographie": "Fabelwesen, Monster, legendäre Gestalten",
+    "Anzahl der Datensätze pro Ikonographie": 145
+  },
+  {
+    "Ikonographie": "Fabeltiere",
+    "Anzahl der Datensätze pro Ikonographie": 120
+  },
+  {
+    "Ikonographie": "Entwurf, Plan eines Gebäudes",
+    "Anzahl der Datensätze pro Ikonographie": 142
+  },
+  {
+    "Ikonographie": "Buchstaben, Alphabet, Schrift",
+    "Anzahl der Datensätze pro Ikonographie": 120
+  },
+  {
+    "Ikonographie": "Brustbild, Dreiviertelansicht",
+    "Anzahl der Datensätze pro Ikonographie": 104
+  },
+  {
+    "Ikonographie": "Boot",
+    "Anzahl der Datensätze pro Ikonographie": 199
+  },
+  {
+    "Ikonographie": "Behälter",
+    "Anzahl der Datensätze pro Ikonographie": 134
+  },
+  {
+    "Ikonographie": "Außenbau einer Kirche",
+    "Anzahl der Datensätze pro Ikonographie": 194
+  },
+  {
+    "Ikonographie": "Armhaltungen, Gesten",
+    "Anzahl der Datensätze pro Ikonographie": 187
+  },
+  {
+    "Ikonographie": "Architekturdarstellungen",
+    "Anzahl der Datensätze pro Ikonographie": 179
+  },
+  {
+    "Ikonographie": "architektonische Details",
+    "Anzahl der Datensätze pro Ikonographie": 121
   }
-]
+] 

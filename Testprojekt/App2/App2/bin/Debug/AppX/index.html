@@ -15,6 +15,7 @@
     <link href="/css/bootstrap.min.css" rel="stylesheet">
 
     <script type="text/javascript" src="data/data.json"></script>
+    <script type="text/javascript" src="data/exampledata.json"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/hammer.min.js"></script>
     <script type="text/javascript" src="js/wordcloud2.js"></script>
@@ -85,21 +86,29 @@
 </head>
 <!-- NAVBAR
 ================================================== -->
-<body onload="load();">
+<body onload="load(); loadIkonographien(); ">
    
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
     <div class="container">
+        <div id ="selectedIkono">
+            <p class="text-right" id="ikono1"></p>
+        </div>
+
 
         <!-- Three columns of text below the carousel -->
         <div class="row">
             <div id="feldname1" class="spaceB">
-                <canvas id="word_cloud" class="word_cloud center-block" width="1100" height="1000"></canvas>
+                <canvas id="word_cloud" class="word_cloud center-block" width="1100" height="700"></canvas>
             </div>
             <div class="wf-container" id="pinterest"></div>
 
         </div><!-- /.row -->
-     </div><!-- /.container -->
+    </div>
+    
+    
+    
+    <!-- /.container -->
             <!-- Bootstrap core JavaScript
     ================================================== -->
             <!-- Placed at the end of the document so the pages load faster -->

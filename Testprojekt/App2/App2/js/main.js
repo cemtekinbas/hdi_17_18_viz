@@ -1,5 +1,5 @@
 ﻿var json;
-
+var parsedIkonographien;
 function load() {
     var url = new Windows.Foundation.Uri("ms-appx:///data/data.json");
     Windows.Storage.StorageFile.getFileFromApplicationUriAsync(url).then(function (file) {
@@ -7,25 +7,30 @@ function load() {
         Windows.Storage.FileIO.readTextAsync(file).then(function (text) {
            
             var parsedObject = JSON.parse(text);
-            json = parsedObject;
-            var ikonographien = new Array();
+            json = parsedObject;          
+        });
+    });
+};
+
+function loadIkonographien() {
+    var url = new Windows.Foundation.Uri("ms-appx:///data/exampledata.json");
+    Windows.Storage.StorageFile.getFileFromApplicationUriAsync(url).then(function (file) {
+        Windows.Storage.FileIO.readTextAsync(file).then(function (text) {
+            var parsedObject = JSON.parse(text);
+            parsedIkonographien = parsedObject;
+            var arr = new Array();
             for (let artefakt of parsedObject) {
-                for (let ikono of artefakt.Ikonographie) {             
-                    if (ikonographien.indexOf(ikono) == -1) {
-                        ikonographien.push([ikono]);
-                    }                            
-                }  
+                 arr.push([artefakt.Ikonographie]);               
             }
-            arr = removeDuplicates(ikonographien);
+           
             list = [];
             for (var i in arr) {
                 //random number for text size in word cloud
-               var randomNumber = Math.floor((Math.random() * 50) + 10);
-               var size = "" + randomNumber;
-                list.push([arr[i],size]);
+                var randomNumber = Math.floor((Math.random() * 50) + 10);
+                var size = "" + randomNumber;
+                list.push([arr[i], size]);
             }
-            
-            var string = "";
+
             WordCloud.minFontSize = "15px"
             WordCloud(document.getElementById('word_cloud'), {
                 list: list,
@@ -33,39 +38,30 @@ function load() {
                 click: function (item) {
                     //item[0] is the word
                     getPictures(item[0]);
+                    addIkonographie(item[0]);
 
                 }
-            });                          
+            });
         });
     });
 };
 
+function addIkonographie(ikonographie) {
+    var parent = document.getElementById("ikono1");
+    parent.innerHTML = "";
+    parent.innerHTML = ikonographie;
+}
 
 function test() {
-    var myElement = document.getElementById('word_cloud');
-
-    // create a simple instance
-    // by default, it only adds horizontal recognizers
-    var mc = new Hammer(myElement);
+    var wordcloud = document.getElementById("feldname1");
+    var mc = new Hammer(wordcloud);
 
     // listen to events...
-    mc.on("panleft panright tap press", function (ev) {
+    mc.on("swiperight", function (ev) {
         var span = document.getElementById("feldname2");
         document.getElementById("word_cloud").innerHTML = "";
         //add pictures to div
-        var zaehler = 0;
-        for (let picture of json) {
-            if (picture.Image != undefined && !picture.Image.includes("placeholder.svg")) {        
-                var img = document.createElement("img");
-                img.src = (picture.Image);
-                img.id = zaehler;
-                img.alt = zaehler;
-                img.width = "50";
-                span.appendChild(img);              
-            }
-            zaehler++;
-            
-        }            
+             
     });
 
     /*if (mc.on("tap") == "tap") {
