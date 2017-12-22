@@ -69,6 +69,7 @@
     <Content Include="css\bootstrap.css.map" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\bootstrap.min.css.map" />
+    <Content Include="css\wf-style.css" />
     <Content Include="data\data.json" />
     <Content Include="data\exampledata.json" />
     <Content Include="data\mkg-lido-excerpt.json" />
@@ -91,6 +92,7 @@
     <Content Include="js\main.js" />
     <Content Include="css\default.css" />
     <Content Include="js\npm.js" />
+    <Content Include="js\responsive_waterfall.js" />
     <Content Include="js\wordcloud2.js" />
     <None Include="App2_TemporaryKey.pfx" />
   </ItemGroup>

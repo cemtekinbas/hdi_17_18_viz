@@ -32,12 +32,12 @@ function load() {
                 drawOutOfBound: false,
                 click: function (item) {
                     //item[0] is the word
-                    getPictures(item[0]);              
+                    getPictures(item[0]);
+
                 }
             });                          
         });
     });
-
 };
 
 
@@ -74,7 +74,7 @@ function test() {
 }
 
 function getPictures(clickedIkono) {
-    var myElement = document.getElementById('feldname2');
+    var myElement = document.getElementById('pinterest');
     myElement.innerHTML = "";
 
         //add pictures to div
@@ -90,16 +90,24 @@ function getPictures(clickedIkono) {
 
     for (let picture of pictures) {
         if (picture != undefined && !picture.includes("placeholder.svg")) {
+            
+            var div = document.createElement("div");
+            div.className += "wf-box";
+            div.id = clickedIkono + zaehler;
             var img = document.createElement("img");
-            img.src = (picture);
-            img.id = clickedIkono + zaehler;
-            img.className += "space";
-            img.height = "200";
-            myElement.appendChild(img);
+            img.src = picture;
+            div.appendChild(img);
+
+            myElement.appendChild(div);
         }
+                
         zaehler++;
     }
 
+    var waterfall = new Waterfall({
+        containerSelector: ".wf-container",
+        boxSelector: ".wf-box"
+    })
 }
 
 function removeDuplicates(arr) {

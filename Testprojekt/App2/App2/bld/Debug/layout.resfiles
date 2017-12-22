@@ -7,6 +7,7 @@ css\bootstrap-theme.css.map
 css\bootstrap-theme.min.css
 css\bootstrap-theme.min.css.map
 css\default.css
+css\wf-style.css
 data\data.json
 data\exampledata.json
 data\mkg-lido-excerpt.json
@@ -28,4 +29,5 @@ js\bootstrap.min.js
 js\hammer.min.js
 js\main.js
 js\npm.js
+js\responsive_waterfall.js
 js\wordcloud2.js
