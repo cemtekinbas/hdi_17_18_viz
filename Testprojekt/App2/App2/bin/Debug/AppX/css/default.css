@@ -1,4 +1,10 @@
 ﻿.col-lg-4 {
-    font-size: 25px;
+   
     text-align: center;
+}
+
+.clickedIkono {
+    font-size: 30px;
+    color: white;
+    font-weight: 400;
 }
