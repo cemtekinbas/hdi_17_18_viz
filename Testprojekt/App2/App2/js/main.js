@@ -1,11 +1,11 @@
 ﻿var json;
 var parsedIkonographien;
+var ikonographienArray;
+
 function load() {
     var url = new Windows.Foundation.Uri("ms-appx:///data/data.json");
     Windows.Storage.StorageFile.getFileFromApplicationUriAsync(url).then(function (file) {
-
-        Windows.Storage.FileIO.readTextAsync(file).then(function (text) {
-           
+        Windows.Storage.FileIO.readTextAsync(file).then(function (text) {         
             var parsedObject = JSON.parse(text);
             json = parsedObject;          
         });
@@ -22,29 +22,33 @@ function loadIkonographien() {
             for (let artefakt of parsedObject) {
                  arr.push([artefakt.Ikonographie]);               
             }
-           
-            list = [];
-            for (var i in arr) {
-                //random number for text size in word cloud
-                var randomNumber = Math.floor((Math.random() * 50) + 10);
-                var size = "" + randomNumber;
-                list.push([arr[i], size]);
-            }
-
-            WordCloud.minFontSize = "15px"
-            WordCloud(document.getElementById('word_cloud'), {
-                list: list,
-                drawOutOfBound: false,
-                click: function (item) {
-                    //item[0] is the word
-                    getPictures(item[0]);
-                    addIkonographie(item[0]);
-
-                }
-            });
+            ikonographienArray = arr;
+            createWordCloud();     
         });
     });
 };
+
+function createWordCloud() {
+    list = [];
+    for (var i in ikonographienArray) {
+        //random number for text size in word cloud
+        var randomNumber = Math.floor((Math.random() * 50) + 10);
+        var size = "" + randomNumber;
+        list.push([ikonographienArray[i], size]);
+    }
+
+    WordCloud.minFontSize = "15px"
+    WordCloud(document.getElementById('word_cloud'), {
+        list: list,
+        drawOutOfBound: false,
+        click: function (item) {
+            //item[0] is the word
+            getPictures(item[0]);
+            addIkonographie(item[0]);
+
+        }
+    });
+}
 
 function addIkonographie(ikonographie) {
     var parent = document.getElementById("ikono1");
@@ -52,24 +56,48 @@ function addIkonographie(ikonographie) {
     parent.innerHTML = ikonographie;
 }
 
-function test() {
+function interactions() {
     var wordcloud = document.getElementById("feldname1");
-    var mc = new Hammer(wordcloud);
-
-    // listen to events...
-    mc.on("swiperight", function (ev) {
-        var span = document.getElementById("feldname2");
-        document.getElementById("word_cloud").innerHTML = "";
-        //add pictures to div
-             
+    var options = {
+        preventDefault: true
+    };
+    // document.body registers gestures anywhere on the page
+    var hammer = new Hammer(wordcloud, options);
+    hammer.get('swipe').set({
+        direction: Hammer.DIRECTION_ALL
     });
+    hammer.on("swipe", swiped);
 
-    /*if (mc.on("tap") == "tap") {
+    var backToWordcloud = document.getElementById("ikono1");
+    var hammer2 = new Hammer(backToWordcloud);
+    
+    hammer2.on("panleft panright tap press", stepback);
+             
+    }
 
-    }*/
+function swiped(event) {
+    var wordcloud = document.getElementById("feldname1");
+    wordcloud.innerHTML = "";
 }
 
+function stepback(event) {
+    var parent = document.getElementById("feldname1");
+    var canvasTag = document.createElement("canvas");
+    canvasTag.className += "word_cloud center-block";
+    canvasTag.id = "word_cloud";
+    canvasTag.width = "1100";
+    canvasTag.hight = "700";
+    parent.appendChild(canvasTag);
+    var myElement = document.getElementById('pinterest');
+    myElement.innerHTML = "";
+    createWordCloud();
+}
+
+    
 function getPictures(clickedIkono) {
+    var wordcloud = document.getElementById('feldname1');
+    wordcloud.innerHTML = "";
+ 
     var myElement = document.getElementById('pinterest');
     myElement.innerHTML = "";
 
