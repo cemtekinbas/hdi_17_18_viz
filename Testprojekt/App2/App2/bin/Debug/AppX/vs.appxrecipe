@@ -62,7 +62,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\crist\OneDrive\Dokumente\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\css\default.css">
       <PackagePath>css\default.css</PackagePath>
-      <Modified>2017-12-24T00:01:15.555</Modified>
+      <Modified>2017-12-24T01:06:02.131</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\crist\OneDrive\Dokumente\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\css\bootstrap-theme.css.map">
       <PackagePath>css\bootstrap-theme.css.map</PackagePath>
@@ -98,11 +98,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\crist\OneDrive\Dokumente\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\js\lightbox.js">
       <PackagePath>js\lightbox.js</PackagePath>
-      <Modified>2017-12-23T23:58:46.444</Modified>
+      <Modified>2017-12-24T00:29:17.646</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\crist\OneDrive\Dokumente\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\js\main.js">
       <PackagePath>js\main.js</PackagePath>
-      <Modified>2017-12-23T23:59:55.785</Modified>
+      <Modified>2017-12-24T01:39:18.377</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\crist\OneDrive\Dokumente\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\js\npm.js">
       <PackagePath>js\npm.js</PackagePath>
