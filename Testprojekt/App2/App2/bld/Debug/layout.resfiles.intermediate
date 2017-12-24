@@ -7,6 +7,7 @@ css\bootstrap-theme.css.map
 css\bootstrap-theme.min.css
 css\bootstrap-theme.min.css.map
 css\default.css
+css\lightbox.css
 css\wf-style.css
 data\data.json
 data\exampledata.json
@@ -27,6 +28,8 @@ index.html
 js\bootstrap.js
 js\bootstrap.min.js
 js\hammer.min.js
+js\lightbox.js
+js\lightbox-plus-jquery.min.js
 js\main.js
 js\npm.js
 js\responsive_waterfall.js

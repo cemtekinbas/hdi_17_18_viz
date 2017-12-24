@@ -13,13 +13,13 @@
 
     <!-- Bootstrap core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
-
+    <link href="/css/lightbox.css" rel="stylesheet">
     <script type="text/javascript" src="data/data.json"></script>
     <script type="text/javascript" src="data/exampledata.json"></script>
-    <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/hammer.min.js"></script>
     <script type="text/javascript" src="js/wordcloud2.js"></script>
     <script type="text/javascript" src="js/responsive_waterfall.js"></script>
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -87,11 +87,11 @@
 <!-- NAVBAR
 ================================================== -->
 <body onload="load(); loadIkonographien(); interactions();">
-   
+
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
     <div class="container">
-        <div id ="selectedIkono">
+        <div id="selectedIkono">
             <p class="clickedIkono text-right" id="ikono1"></p>
         </div>
 
@@ -105,17 +105,20 @@
 
         </div><!-- /.row -->
     </div>
-    
-    
-    
-    <!-- /.container -->
-            <!-- Bootstrap core JavaScript
-    ================================================== -->
-            <!-- Placed at the end of the document so the pages load faster -->
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-            <script src="js/bootstrap.min.js"></script>
-            <script>
 
-            </script>
+
+
+    <!-- /.container -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.js"></script>
+
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+
+    </script>
 </body>
 </html>

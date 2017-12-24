@@ -77,8 +77,14 @@ function interactions() {
         direction: Hammer.DIRECTION_ALL
     });
     hammer2.on("swipe", stepback);
-             
-    }
+    //flip image
+    //var image = document.getElementById("lb-container");
+    //var hammer2 = new Hammer(image);
+    //hammer2.get('swipe').set({
+    //    direction: Hammer.DIRECTION_ALL
+    //});
+    //hammer2.on("swipe", stepback);
+ }
 
 function swiped(event) {
     //todo: Wort mit ziehen
@@ -109,7 +115,8 @@ function getPictures(clickedIkono) {
 
         //add pictures to div
     var zaehler = 0;
-    var pictures = [];
+    var pictures = []
+
     for (let artefakt of json) {
         for (let ikono of artefakt.Ikonographie) {
             if (ikono == clickedIkono) {
@@ -117,18 +124,22 @@ function getPictures(clickedIkono) {
             }
         }
     }
-
     for (let picture of pictures) {
         if (picture != undefined && !picture.includes("placeholder.svg")) {
-            
+            var a = document.createElement("a");
+            a.href = picture;
+            a.setAttribute('data-lightbox', 'pictureSet');
+
             var div = document.createElement("div");
             div.className += "wf-box";
             div.id = clickedIkono + zaehler;
+
             var img = document.createElement("img");
             img.src = picture;
-            div.appendChild(img);
-
+            
             myElement.appendChild(div);
+            div.appendChild(a);
+            a.appendChild(img);
         }
                 
         zaehler++;
@@ -137,7 +148,7 @@ function getPictures(clickedIkono) {
     var waterfall = new Waterfall({
         containerSelector: ".wf-container",
         boxSelector: ".wf-box"
-    })
+    });
 }
 
 function removeDuplicates(arr) {
@@ -151,3 +162,29 @@ function removeDuplicates(arr) {
     }
     return uniques;
 }  
+function picInfo() {
+    var pictures = [];
+    for (let artefakt of json) {
+        for (let ikono of artefakt.Ikonographie) {
+            if (ikono == clickedIkono) {
+                pictures.push(artefakt.Image);
+            }
+        }
+    }
+    var pictureInfo = [];
+    for (let picture of pictures) {
+        if (picture != undefined && !picture.includes("placeholder.svg")) {
+
+            for (let artefakt of json) {
+                if (picture == artefakt.Image) {
+                    pictureInfo.push(artefakt.Sammlung);
+                    pictureInfo.push(artefakt.Sachgruppe);
+                }
+            }
+            var divFlipBack = document.getElementById("back");
+            var p1 = document.createElement("p").innerHTML = pictureInfo[0];
+            var p2 = document.createElement("p").innerHTML = pictureInfo[1];
+          //  divFlipBack.parentNode.insertBefore(p1, divFlipBack.nextSibling);
+        }
+    }
+}

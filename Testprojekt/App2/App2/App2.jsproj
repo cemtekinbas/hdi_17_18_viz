@@ -69,6 +69,8 @@
     <Content Include="css\bootstrap.css.map" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\bootstrap.min.css.map" />
+    <Content Include="css\lightbox.css" />
+    <Content Include="js\lightbox-plus-jquery.min.js" />
     <Content Include="css\wf-style.css" />
     <Content Include="data\data.json" />
     <Content Include="data\exampledata.json" />
@@ -89,6 +91,7 @@
     <Content Include="js\hammer.min.js" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\lightbox.js" />
     <Content Include="js\main.js" />
     <Content Include="css\default.css" />
     <Content Include="js\npm.js" />
