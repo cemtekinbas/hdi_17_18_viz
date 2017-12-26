@@ -1,4 +1,4 @@
-﻿var json;
+﻿//var json;
 var parsedIkonographien;
 var ikonographienArray;
 var chosenIkonographie;
@@ -46,7 +46,7 @@ function createWordCloud() {
             //item[0] is the word
             addIkonographie(item[0]);
             chosenIkonographie = item[0];
-            //todo: ausgewähltes Wort hervorheben
+            //todo: ausgewähltes Wort hervorheben       
            
         }
     });
@@ -86,31 +86,35 @@ function interactions() {
     //hammer2.on("swipe", stepback);
  }
 
-function swiped(event) {
+function swiped(event) {      
+    $(document).ready(function () {
+        $("#word_cloud").animate({
+            height: "0px",
+            width: "0px"
+        }, {
+                duration: 600,
+                complete: getPictures(chosenIkonographie)
+            }
+        );
+    });
     //todo: Wort mit ziehen
-    getPictures(chosenIkonographie);
 }
 
 function stepback(event) {
-    var parent = document.getElementById("feldname1");
-    var canvasTag = document.createElement("canvas");
-    canvasTag.className += "word_cloud center-block";
-    canvasTag.id = "word_cloud";
-    canvasTag.width = "1100";
-    canvasTag.height = "700";
-    parent.appendChild(canvasTag);
-    var myElement = document.getElementById('pinterest');
-    myElement.innerHTML = "";
+    $("#word_cloud").animate({
+        height: "700",
+        width: "1100"
+    }, {
+         duration: 600,
+         complete: document.getElementById('pinterest').innerHTML = ""
+        }
+    );
     document.getElementById("ikono1").innerHTML = "";
-    createWordCloud();
 }
 
     
 function getPictures(clickedIkono) {
-    var wordcloud = document.getElementById('feldname1');
-    wordcloud.innerHTML = "";
- 
-    var myElement = document.getElementById('pinterest');
+        var myElement = document.getElementById('pinterest');
     myElement.innerHTML = "";
 
         //add pictures to div
