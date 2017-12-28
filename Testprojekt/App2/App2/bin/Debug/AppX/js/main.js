@@ -10,6 +10,8 @@ var chosenIkonographie;
 var lastPosX = 0;
 var lastPosY = 0;
 var isDragging = false;
+// to check if an ikonographie is chosen
+var chosen = false;
 
 function load() {
     var url = new Windows.Foundation.Uri("ms-appx:///data/data.json");
@@ -51,6 +53,8 @@ function createWordCloud() {
         list: list,
         drawOutOfBound: false,
         click: function (item) {
+            //swipe is now possible
+            chosen = true;
             //item[0] is the word
             addIkonographie(item[0]);
             chosenIkonographie = item[0];
@@ -77,7 +81,7 @@ function interactions() {
     hammer.get('pan').set({
         direction: Hammer.DIRECTION_ALL
     });
-    hammer.on("pan", swiped);
+    hammer.on("panright panup", swiped);
 
 
     var backToWordcloud = document.getElementById("ikono1");
@@ -96,7 +100,7 @@ function interactions() {
  }
 
 function swiped(event) {
-
+    if (chosen) {
         // for convience, let's get a reference to our object
         var elem = event.target;
 
@@ -107,7 +111,6 @@ function swiped(event) {
             isDragging = true;
             lastPosX = elem.offsetLeft;
             lastPosY = elem.offsetTop;
-        
         }
 
         // we simply need to determine where the x,y of this
@@ -131,44 +134,15 @@ function swiped(event) {
                 height: "0px",
                 width: "0px"
             }, {
-                    duration: 600,
+                    duration: 800,
                     complete: getPictures(chosenIkonographie)
                 }
             );
         }
-
-    
-
-
-
-  
-
-
-    /*
-    var cloud = document.getElementById('word_cloud');
-    document.getElementById('test').innerHTML = event.type + " deltaX" + event.deltaX;
-    var page = document.getElementById("feldname1");
-    var sidebar = 0;
-    var x = event.deltaX + 'px';
-    var y = event.deltaY + 'px';
-    $("#word_cloud").animate({
-        left: x,
-        top: y
-    });
-        /*
-
-     
-    /*$(document).ready(function () {
-        $("#word_cloud").animate({
-            height: "0px",
-            width: "0px"
-        }, {
-                duration: 600,
-                complete: getPictures(chosenIkonographie)
-            }
-        );
-    });*/
-    //todo: Wort mit ziehen
+    } else {
+        //add alert
+        //You first have to click on an ikonographie
+    }
 }
 
 function stepback(event) {
@@ -180,12 +154,13 @@ function stepback(event) {
          complete: document.getElementById('pinterest').innerHTML = ""
         }
     );
+    chosen = false;
     document.getElementById("ikono1").innerHTML = "";
 }
 
     
 function getPictures(clickedIkono) {
-        var myElement = document.getElementById('pinterest');
+    var myElement = document.getElementById('pinterest');
     myElement.innerHTML = "";
 
         //add pictures to div
