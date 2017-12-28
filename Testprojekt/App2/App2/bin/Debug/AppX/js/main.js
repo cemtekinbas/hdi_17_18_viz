@@ -3,6 +3,14 @@ var parsedIkonographien;
 var ikonographienArray;
 var chosenIkonographie;
 
+// poor choice here, but to keep it simple
+// setting up a few vars to keep track of things.
+// at issue is these values need to be encapsulated
+// in some scope other than global.
+var lastPosX = 0;
+var lastPosY = 0;
+var isDragging = false;
+
 function load() {
     var url = new Windows.Foundation.Uri("ms-appx:///data/data.json");
     Windows.Storage.StorageFile.getFileFromApplicationUriAsync(url).then(function (file) {
@@ -66,10 +74,11 @@ function interactions() {
     };
     // document.body registers gestures anywhere on the page
     var hammer = new Hammer(wordcloud, options);
-    hammer.get('swipe').set({
+    hammer.get('pan').set({
         direction: Hammer.DIRECTION_ALL
     });
-    hammer.on("swipe", swiped);
+    hammer.on("pan", swiped);
+
 
     var backToWordcloud = document.getElementById("ikono1");
     var hammer2 = new Hammer(backToWordcloud);
@@ -86,8 +95,70 @@ function interactions() {
     //hammer2.on("swipe", stepback);
  }
 
-function swiped(event) {      
-    $(document).ready(function () {
+function swiped(event) {
+
+        // for convience, let's get a reference to our object
+        var elem = event.target;
+
+        // DRAG STARTED
+        // here, let's snag the current position
+        // and keep track of the fact that we're dragging
+        if (!isDragging) {
+            isDragging = true;
+            lastPosX = elem.offsetLeft;
+            lastPosY = elem.offsetTop;
+        
+        }
+
+        // we simply need to determine where the x,y of this
+        // object is relative to where it's "last" known position is
+        // NOTE: 
+        //    deltaX and deltaY are cumulative
+        // Thus we need to always calculate 'real x and y' relative
+        // to the "lastPosX/Y"
+        var posX = event.deltaX + lastPosX;
+        var posY = event.deltaY + lastPosY;
+
+        // move our element to that position
+        elem.style.left = posX + "px";
+        elem.style.top = posY + "px";
+
+        // DRAG ENDED
+        // this is where we simply forget we are dragging
+        if (event.isFinal) {
+            isDragging = false;
+            $("#word_cloud").animate({
+                height: "0px",
+                width: "0px"
+            }, {
+                    duration: 600,
+                    complete: getPictures(chosenIkonographie)
+                }
+            );
+        }
+
+    
+
+
+
+  
+
+
+    /*
+    var cloud = document.getElementById('word_cloud');
+    document.getElementById('test').innerHTML = event.type + " deltaX" + event.deltaX;
+    var page = document.getElementById("feldname1");
+    var sidebar = 0;
+    var x = event.deltaX + 'px';
+    var y = event.deltaY + 'px';
+    $("#word_cloud").animate({
+        left: x,
+        top: y
+    });
+        /*
+
+     
+    /*$(document).ready(function () {
         $("#word_cloud").animate({
             height: "0px",
             width: "0px"
@@ -96,7 +167,7 @@ function swiped(event) {
                 complete: getPictures(chosenIkonographie)
             }
         );
-    });
+    });*/
     //todo: Wort mit ziehen
 }
 
