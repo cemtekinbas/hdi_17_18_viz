@@ -2216,7 +2216,7 @@ if (!window.clearImmediate) {
 
                     canvas.addEventListener('touchend', touchend);
 
-                    canvas.style.webkitTapHighlightColor = 'rgba(0, 0, 0, 0)';
+                    canvas.style.webkitTapHighlightColor = 'rgba(0,0,0,0)';
                 }
 
 

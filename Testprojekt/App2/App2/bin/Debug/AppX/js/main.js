@@ -16,9 +16,9 @@ var chosen = false;
 function load() {
     var url = new Windows.Foundation.Uri("ms-appx:///data/data.json");
     Windows.Storage.StorageFile.getFileFromApplicationUriAsync(url).then(function (file) {
-        Windows.Storage.FileIO.readTextAsync(file).then(function (text) {         
+        Windows.Storage.FileIO.readTextAsync(file).then(function (text) {
             var parsedObject = JSON.parse(text);
-            json = parsedObject;          
+            json = parsedObject;
         });
     });
 };
@@ -31,10 +31,10 @@ function loadIkonographien() {
             parsedIkonographien = parsedObject;
             var arr = new Array();
             for (let artefakt of parsedObject) {
-                 arr.push([artefakt.Ikonographie]);               
+                arr.push([artefakt.Ikonographie]);
             }
             ikonographienArray = arr;
-            createWordCloud();     
+            createWordCloud();
         });
     });
 };
@@ -52,6 +52,7 @@ function createWordCloud() {
     WordCloud(document.getElementById('word_cloud'), {
         list: list,
         drawOutOfBound: false,
+
         click: function (item) {
             //swipe is now possible
             chosen = true;
@@ -59,7 +60,7 @@ function createWordCloud() {
             addIkonographie(item[0]);
             chosenIkonographie = item[0];
             //todo: ausgewähltes Wort hervorheben       
-           
+
         }
     });
 }
@@ -68,7 +69,7 @@ function addIkonographie(ikonographie) {
     var parent = document.getElementById("ikono1");
     parent.innerHTML = "";
     parent.innerHTML = ikonographie;
- 
+
 }
 
 function interactions() {
@@ -81,7 +82,7 @@ function interactions() {
     hammer.get('pan').set({
         direction: Hammer.DIRECTION_ALL
     });
-    hammer.on("panright panup", swiped);
+    hammer.on("pan", swiped);
 
 
     var backToWordcloud = document.getElementById("ikono1");
@@ -89,7 +90,7 @@ function interactions() {
     hammer2.get('swipe').set({
         direction: Hammer.DIRECTION_ALL
     });
-    hammer2.on("swipe", stepback);
+    hammer2.on('swipe', stepback);
     //flip image
     //var image = document.getElementById("lb-container");
     //var hammer2 = new Hammer(image);
@@ -97,7 +98,7 @@ function interactions() {
     //    direction: Hammer.DIRECTION_ALL
     //});
     //hammer2.on("swipe", stepback);
- }
+}
 
 function swiped(event) {
     if (chosen) {
@@ -150,20 +151,20 @@ function stepback(event) {
         height: "700",
         width: "1100"
     }, {
-         duration: 600,
-         complete: document.getElementById('pinterest').innerHTML = ""
+            duration: 600,
+            complete: document.getElementById('pinterest').innerHTML = ""
         }
     );
     chosen = false;
     document.getElementById("ikono1").innerHTML = "";
 }
 
-    
+
 function getPictures(clickedIkono) {
     var myElement = document.getElementById('pinterest');
     myElement.innerHTML = "";
 
-        //add pictures to div
+    //add pictures to div
     var zaehler = 0;
     var pictures = []
 
@@ -186,12 +187,12 @@ function getPictures(clickedIkono) {
 
             var img = document.createElement("img");
             img.src = picture;
-            
+
             myElement.appendChild(div);
             div.appendChild(a);
             a.appendChild(img);
         }
-                
+
         zaehler++;
     }
 
@@ -211,24 +212,71 @@ function removeDuplicates(arr) {
         itemsFound[stringified] = true;
     }
     return uniques;
-}  
+}
 function picInfo() {
-   
-    var pictureInfo = [];
-    
-            var imgSrc = $("img.lb-image").attr("src");
-            for (let artefakt of json) {
-                if (imgSrc == artefakt.Image) {
-                    pictureInfo.push(artefakt.Objektbezeichnung);
-                    pictureInfo.push(artefakt.Sachgruppe);
-                }
-            }
 
-    var p1 = $("<p></p>").text("Objektbezichnung: "+pictureInfo[0]);
+    var pictureInfo = [];
+
+    var imgSrc = $("img.lb-image").attr("src");
+    for (let artefakt of json) {
+        if (imgSrc == artefakt.Image) {
+            pictureInfo.push(artefakt.Objektbezeichnung);
+            pictureInfo.push(artefakt.Sachgruppe);
+            pictureInfo.push(artefakt.Material);
+            pictureInfo.push(artefakt.Technik);
+            pictureInfo.push(artefakt.Personen);
+            pictureInfo.push(artefakt.Ikonographie);
+        }
+    }
+    console.log(pictureInfo[4].length);
+    $(".back").empty();
+    var p1 = $("<p></p>").text("Objektbezichnung: " + pictureInfo[0]);
+    p1.addClass("lead");
     var p2 = $("<p></p>").text("Sachgruppe: " + pictureInfo[1]);
-    $("p").remove();
+    p2.addClass("lead");
+    var p3 = $("<p></p>").text("Material: " + pictureInfo[2]);
+    p3.addClass("lead");
+    var p4 = $("<p></p>").text("Technik: " + pictureInfo[3]);
+    p4.addClass("lead");
+    var name = pictureInfo[4][0].Name;
+    var rolle = pictureInfo[4][0].Rolle;
+    var p5 = $("<p></p>").text("Person 1: " + name + " (" + rolle + ")");
+    p5.addClass("lead");
+    if (pictureInfo[4].length == 2) {
+        var name2 = pictureInfo[4][1].Name;
+        var rolle2 = pictureInfo[4][1].Rolle;
+        var p6 = $("<p></p>").text("Person 2: " + name2 + " (" + rolle2 + ")");
+        p6.addClass("lead");
+        $(".back").append(p6);
+    }
+    if (pictureInfo[4].length == 3) {
+        var name2 = pictureInfo[4][1].Name;
+        var rolle2 = pictureInfo[4][1].Rolle;
+        var name3 = pictureInfo[4][2].Name;
+        var rolle3 = pictureInfo[4][2].Rolle;
+
+        var p6 = $("<p></p>").text("Person 2: " + name2 + " (" + rolle2 + ")");
+        p6.addClass("lead");
+        
+
+
+        var p7 = $("<p></p>").text("Person 3: " + name3 + " (" + rolle3 + ")");
+        p7.addClass("lead");
+
+    }
+    
+    var p8 = $("<p></p>").text("Ikonographien: " + pictureInfo[5]);
+    p8.addClass("lead");
+
+   
     $(".back").append(p1);
     $(".back").append(p2);
+    $(".back").append(p3);
+    $(".back").append(p4);
+    $(".back").append(p5);
+    $(".back").append(p6);
+    $(".back").append(p7);
+    $(".back").append(p8);
 }
 
 /*!
@@ -619,7 +667,7 @@ function picInfo() {
         this.updateDetails();
         this.preloadNeighboringImages();
         this.enableKeyboardNav();
-        
+
     };
 
 
