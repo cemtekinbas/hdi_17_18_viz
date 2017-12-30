@@ -10,6 +10,9 @@ var chosenIkonographie;
 var lastPosX = 0;
 var lastPosY = 0;
 var isDragging = false;
+var lastPosX = 1100;
+var lastPosY = 0;
+var isDraggingBack = false;
 // to check if an ikonographie is chosen
 var chosen = false;
 
@@ -87,10 +90,10 @@ function interactions() {
 
     var backToWordcloud = document.getElementById("ikono1");
     var hammer2 = new Hammer(backToWordcloud);
-    hammer2.get('swipe').set({
+    hammer2.get('pan').set({
         direction: Hammer.DIRECTION_ALL
     });
-    hammer2.on('swipe', stepback);
+    hammer2.on('pan', stepback);
     //flip image
     //var image = document.getElementById("lb-container");
     //var hammer2 = new Hammer(image);
@@ -122,11 +125,16 @@ function swiped(event) {
         // to the "lastPosX/Y"
         var posX = event.deltaX + lastPosX;
         var posY = event.deltaY + lastPosY;
-
+      
         // move our element to that position
         elem.style.left = posX + "px";
         elem.style.top = posY + "px";
 
+        var newWidth = $("#word_cloud").width() - 5 + "px";
+        var newHeight = $("#word_cloud").height() - 5 + "px";
+
+       //change height and width
+        $("#word_cloud").css({ "width": newWidth, "height": newHeight }); 
         // DRAG ENDED
         // this is where we simply forget we are dragging
         if (event.isFinal) {
@@ -147,14 +155,52 @@ function swiped(event) {
 }
 
 function stepback(event) {
-    $("#word_cloud").animate({
-        height: "700",
-        width: "1100"
-    }, {
-            duration: 600,
-            complete: document.getElementById('pinterest').innerHTML = ""
-        }
-    );
+    var elem = event.target;
+
+    // DRAG STARTED
+    // here, let's snag the current position
+    // and keep track of the fact that we're dragging
+    if (!isDraggingBack) {
+        isDraggingBack = true;
+        lastPosXBack = elem.offsetLeft;
+        lastPosYBack = elem.offsetTop;
+    }
+
+    // we simply need to determine where the x,y of this
+    // object is relative to where it's "last" known position is
+    // NOTE: 
+    //    deltaX and deltaY are cumulative
+    // Thus we need to always calculate 'real x and y' relative
+    // to the "lastPosX/Y"
+    var posX = event.deltaX + lastPosXBack;
+    var posY = event.deltaY + lastPosYBack;
+
+    // move our element to that position
+    elem.style.left = posX + "px";
+    elem.style.top = posY + "px";
+
+    var newWidth = $("#word_cloud").width() + 5 + "px";
+    var newHeight = $("#word_cloud").height() + 5 + "px";
+
+    //change height and width
+    $("#word_cloud").css({ "width": newWidth, "height": newHeight });
+    // DRAG ENDED
+    // this is where we simply forget we are dragging
+    if (event.isFinal) {
+        isDraggingBack = false;
+        $("#word_cloud").animate({
+            height: "700",
+            width: "1100",
+            left: "0px",
+            bottom: "0px",
+            top: "0px"
+        }, {
+                duration: 600,
+                complete: document.getElementById('pinterest').innerHTML = ""
+            }
+        );
+    }
+   
     chosen = false;
     document.getElementById("ikono1").innerHTML = "";
 }
