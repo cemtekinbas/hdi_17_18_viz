@@ -46,19 +46,8 @@ function createWordCloud() {
     list = [];
     for (var i in ikonographienArray) {
         //random number for text size in word cloud
-        var randomNumber = Math.floor((Math.random() * 30) + 15);
-        var size;
-        var test;
-        if (ikonographienArray[i] === chosenIkonographie) {
-            size = "" + 60;
-            document.getElementById("test").innerHTML = ikonographienArray[i];
-
-        } else {
-            size = "" + randomNumber;
-        }
-        //test = test.concat(size, ikonographienArray[i]);
-        
-       
+        var randomNumber = Math.floor((Math.random() * 50) + 10);
+        var size = "" + randomNumber;
         list.push([ikonographienArray[i], size]);
     }
 
@@ -66,7 +55,6 @@ function createWordCloud() {
     WordCloud(document.getElementById('word_cloud'), {
         list: list,
         drawOutOfBound: false,
-
         click: function (item) {
             //swipe is now possible
             chosen = true;
@@ -74,8 +62,9 @@ function createWordCloud() {
             addIkonographie(item[0]);
             chosenIkonographie = item[0];
             //todo: ausgewähltes Wort hervorheben  
-            createWordCloud();
-
+            var canvas = document.getElementById("word_cloud");
+            var content = canvas.getContext('2d');
+            content.fillStyle = "#fffff";
         }
     });
 }

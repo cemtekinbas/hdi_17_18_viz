@@ -1413,7 +1413,7 @@ if (!window.clearImmediate) {
             distance, theta, rotateDeg, attributes) {
 
 
-
+            
             var fontSize = info.fontSize;
 
             var color;
@@ -1545,10 +1545,10 @@ if (!window.clearImmediate) {
                     // drawText on DIV element
 
                     var span = document.createElement('span');
-                    //var number = 0;
-                    //var id = "" + number;
-                    //span.id=id;
-                    //number++;
+                    var number = 0;
+                    var id = "" + number;
+                    span.id=id;
+                    number++;
                     //console.log(span.id);
                     var transformRule = '';
 
