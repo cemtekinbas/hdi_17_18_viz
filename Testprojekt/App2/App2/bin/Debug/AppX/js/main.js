@@ -55,6 +55,9 @@ function createWordCloud() {
     WordCloud(document.getElementById('word_cloud'), {
         list: list,
         drawOutOfBound: false,
+        color: function (word, weight) {
+            return (word === chosenIkonographie) ? "white" : random_hsl_color(50, 90);
+        },
         click: function (item) {
             //swipe is now possible
             chosen = true;
@@ -62,11 +65,31 @@ function createWordCloud() {
             addIkonographie(item[0]);
             chosenIkonographie = item[0];
             //todo: ausgewähltes Wort hervorheben  
-            var canvas = document.getElementById("word_cloud");
-            var content = canvas.getContext('2d');
-            content.fillStyle = "#fffff";
+            createWordCloud();
+          /*  var x = document.getElementById("test2");
+            item[0].color;
+            x.className = "mystyle";
+            x.style.color = "";
+          
+            $(":contains(Tierornamente)").css({ "color":"white"});
+            $(":contains(Tierornamente)").addClass("mystyle");
+            var ex = $("#word_cloud");
+            document.getElementById("test").innerHTML = item[0].color;*/
+                  
         }
     });
+}
+
+function random_hsl_color(min, max) {
+
+    return 'hsl(' +
+
+        (Math.random() * 360).toFixed() + ',' +
+
+        (Math.random() * 30 + 70).toFixed() + '%,' +
+
+        (Math.random() * (max - min) + min).toFixed() + '%)';
+
 }
 
 function addIkonographie(ikonographie) {

@@ -43,6 +43,11 @@
             position: relative;
         }
 
+        .mystyle {
+            color: white;
+        }
+
+
         .spaceB {
             margin-bottom: 20px;
         }
@@ -89,6 +94,7 @@
 ================================================== -->
 <body onload="load(); loadIkonographien(); interactions(); ">
     <div id="test"></div>
+    <span id="test2" style="color:blue;">Hallo Welt</span>
     <!-- Wrap the rest of the page in another container to center all the content. -->
      <div class="container">
         <div id="selectedIkono">
@@ -99,7 +105,7 @@
         <!-- Three columns of text below the carousel -->
         <div class="row">
             <div id="feldname1" class="spaceB">
-                <canvas id="word_cloud" class="word_cloud center-block" width="1100" height="700"></canvas>
+                <canvas id="word_cloud" class="word_cloud center-block" width="1100" height="700" contenteditable="true"></canvas>
             </div>
             <div class="wf-container" id="pinterest"></div>
 

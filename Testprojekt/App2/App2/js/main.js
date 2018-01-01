@@ -55,6 +55,9 @@ function createWordCloud() {
     WordCloud(document.getElementById('word_cloud'), {
         list: list,
         drawOutOfBound: false,
+        color: function (word, weight) {
+            return (word === chosenIkonographie) ? "white" : random_hsl_color(50, 90);
+        },
         click: function (item) {
             //swipe is now possible
             chosen = true;
@@ -62,9 +65,16 @@ function createWordCloud() {
             addIkonographie(item[0]);
             chosenIkonographie = item[0];
             //todo: ausgewähltes Wort hervorheben  
-                    
+            createWordCloud();
         }
     });
+}
+
+function random_hsl_color(min, max) {
+    return 'hsl(' +
+        (Math.random() * 360).toFixed() + ',' +
+        (Math.random() * 30 + 70).toFixed() + '%,' +
+        (Math.random() * (max - min) + min).toFixed() + '%)';
 }
 
 function addIkonographie(ikonographie) {
