@@ -3,12 +3,6 @@
     text-align: center;
 }
 
-.clickedIkono {
-    font-size: 30px;
-    color: white;
-    font-weight: 400;
-}
-
 /* entire container, keeps perspective */
 .flip-container {
     perspective: 1000px;

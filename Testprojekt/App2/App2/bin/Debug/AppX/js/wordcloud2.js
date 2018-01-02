@@ -374,7 +374,7 @@ if (!window.clearImmediate) {
 
             clearCanvas: true,
 
-            backgroundColor: '#000',  // opaque white = rgba(255, 255, 255, 1)
+            backgroundColor: '#0f0f0f',  // opaque white = rgba(255, 255, 255, 1)
 
 
 
