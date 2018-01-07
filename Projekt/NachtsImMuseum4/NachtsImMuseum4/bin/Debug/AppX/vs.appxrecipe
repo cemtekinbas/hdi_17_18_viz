@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>WIN10X64</Machine>
-    <WindowsUser>student</WindowsUser>
+    <Machine>DESKTOP-TC2NBLS</Machine>
+    <WindowsUser>admin</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
@@ -10,7 +10,7 @@
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>97aff420-8436-4fe6-b9bc-d6eac03568e8</PackageIdentityName>
     <PackageIdentityPublisher>CN=Kathrin</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\student\Documents\hdi_17_18_viz-master\hdi_17_18_viz-master\Projekt\NachtsImMuseum4\NachtsImMuseum4\bld\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\admin\Documents\GitHub\hdi_17_18_viz\Projekt\NachtsImMuseum4\NachtsImMuseum4\bld\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -19,8 +19,8 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>
     </WindowsSdkPath>
-    <LayoutDir>C:\Users\student\Documents\hdi_17_18_viz-master\hdi_17_18_viz-master\Projekt\NachtsImMuseum4\NachtsImMuseum4\bin\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>64F417FE647C605A4A11654B8E2609B40FF1C8C17570527E1FACA2B4B2175047</RegisteredManifestChecksum>
+    <LayoutDir>C:\Users\admin\Documents\GitHub\hdi_17_18_viz\Projekt\NachtsImMuseum4\NachtsImMuseum4\bin\Debug\AppX</LayoutDir>
+    <RegisteredManifestChecksum>8C9C4E5E8BEC7F3F34562F32A9AAB41DCA157C401FBE4D477CA7E381A1A6808E</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>97aff420-8436-4fe6-b9bc-d6eac03568e8_1.0.0.0_neutral__bnmsqyy0k2ckj</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>97aff420-8436-4fe6-b9bc-d6eac03568e8_bnmsqyy0k2ckj!App</RegisteredUserModeAppID>
     <RegisteredPackageID>97aff420-8436-4fe6-b9bc-d6eac03568e8</RegisteredPackageID>
@@ -29,115 +29,127 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\student\Documents\hdi_17_18_viz-master\hdi_17_18_viz-master\Projekt\NachtsImMuseum4\NachtsImMuseum4\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\admin\Documents\GitHub\hdi_17_18_viz\Projekt\NachtsImMuseum4\NachtsImMuseum4\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-07T14:46:46.597</Modified>
+      <Modified>2017-12-11T07:30:06.994</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\student\Documents\hdi_17_18_viz-master\hdi_17_18_viz-master\Projekt\NachtsImMuseum4\NachtsImMuseum4\css\bootstrap-theme.css">
+    <AppxPackagedFile Include="C:\Users\admin\Documents\GitHub\hdi_17_18_viz\Projekt\NachtsImMuseum4\NachtsImMuseum4\css\bootstrap-theme.css">
       <PackagePath>css\bootstrap-theme.css</PackagePath>
-      <Modified>2017-12-07T13:22:35.704</Modified>
+      <Modified>2017-12-11T06:42:45.061</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\student\Documents\hdi_17_18_viz-master\hdi_17_18_viz-master\Projekt\NachtsImMuseum4\NachtsImMuseum4\css\bootstrap-theme.min.css">
+    <AppxPackagedFile Include="C:\Users\admin\Documents\GitHub\hdi_17_18_viz\Projekt\NachtsImMuseum4\NachtsImMuseum4\css\bootstrap-theme.min.css">
       <PackagePath>css\bootstrap-theme.min.css</PackagePath>
-      <Modified>2017-12-07T13:22:35.715</Modified>
+      <Modified>2017-12-11T06:42:45.065</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\student\Documents\hdi_17_18_viz-master\hdi_17_18_viz-master\Projekt\NachtsImMuseum4\NachtsImMuseum4\css\bootstrap.css">
+    <AppxPackagedFile Include="C:\Users\admin\Documents\GitHub\hdi_17_18_viz\Projekt\NachtsImMuseum4\NachtsImMuseum4\css\bootstrap.css">
       <PackagePath>css\bootstrap.css</PackagePath>
-      <Modified>2017-12-07T13:22:35.728</Modified>
+      <Modified>2017-12-11T06:42:45.069</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\student\Documents\hdi_17_18_viz-master\hdi_17_18_viz-master\Projekt\NachtsImMuseum4\NachtsImMuseum4\css\bootstrap.min.css">
+    <AppxPackagedFile Include="C:\Users\admin\Documents\GitHub\hdi_17_18_viz\Projekt\NachtsImMuseum4\NachtsImMuseum4\css\bootstrap.min.css">
       <PackagePath>css\bootstrap.min.css</PackagePath>
-      <Modified>2017-12-07T13:22:35.743</Modified>
+      <Modified>2017-12-11T06:42:45.074</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\student\Documents\hdi_17_18_viz-master\hdi_17_18_viz-master\Projekt\NachtsImMuseum4\NachtsImMuseum4\css\default.css">
+    <AppxPackagedFile Include="C:\Users\admin\Documents\GitHub\hdi_17_18_viz\Projekt\NachtsImMuseum4\NachtsImMuseum4\css\default.css">
       <PackagePath>css\default.css</PackagePath>
-      <Modified>2017-12-07T13:08:15.390</Modified>
+      <Modified>2017-12-11T06:42:45.080</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\student\Documents\hdi_17_18_viz-master\hdi_17_18_viz-master\Projekt\NachtsImMuseum4\NachtsImMuseum4\css\bootstrap-theme.css.map">
+    <AppxPackagedFile Include="C:\Users\admin\Documents\GitHub\hdi_17_18_viz\Projekt\NachtsImMuseum4\NachtsImMuseum4\css\bootstrap-theme.css.map">
       <PackagePath>css\bootstrap-theme.css.map</PackagePath>
-      <Modified>2017-12-07T13:22:35.709</Modified>
+      <Modified>2017-12-11T06:42:45.063</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\student\Documents\hdi_17_18_viz-master\hdi_17_18_viz-master\Projekt\NachtsImMuseum4\NachtsImMuseum4\css\bootstrap-theme.min.css.map">
+    <AppxPackagedFile Include="C:\Users\admin\Documents\GitHub\hdi_17_18_viz\Projekt\NachtsImMuseum4\NachtsImMuseum4\css\bootstrap-theme.min.css.map">
       <PackagePath>css\bootstrap-theme.min.css.map</PackagePath>
-      <Modified>2017-12-07T13:22:35.719</Modified>
+      <Modified>2017-12-11T06:42:45.066</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\student\Documents\hdi_17_18_viz-master\hdi_17_18_viz-master\Projekt\NachtsImMuseum4\NachtsImMuseum4\css\bootstrap.css.map">
+    <AppxPackagedFile Include="C:\Users\admin\Documents\GitHub\hdi_17_18_viz\Projekt\NachtsImMuseum4\NachtsImMuseum4\css\bootstrap.css.map">
       <PackagePath>css\bootstrap.css.map</PackagePath>
-      <Modified>2017-12-07T13:22:35.736</Modified>
+      <Modified>2017-12-11T06:42:45.072</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\student\Documents\hdi_17_18_viz-master\hdi_17_18_viz-master\Projekt\NachtsImMuseum4\NachtsImMuseum4\css\bootstrap.min.css.map">
+    <AppxPackagedFile Include="C:\Users\admin\Documents\GitHub\hdi_17_18_viz\Projekt\NachtsImMuseum4\NachtsImMuseum4\css\bootstrap.min.css.map">
       <PackagePath>css\bootstrap.min.css.map</PackagePath>
-      <Modified>2017-12-07T13:22:35.752</Modified>
+      <Modified>2017-12-11T06:42:45.078</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\student\Documents\hdi_17_18_viz-master\hdi_17_18_viz-master\Projekt\NachtsImMuseum4\NachtsImMuseum4\index.html">
+    <AppxPackagedFile Include="C:\Users\admin\Documents\GitHub\hdi_17_18_viz\Projekt\NachtsImMuseum4\NachtsImMuseum4\index.html">
       <PackagePath>index.html</PackagePath>
-      <Modified>2017-12-07T15:09:37.976</Modified>
+      <Modified>2017-12-11T10:52:21.806</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\student\Documents\hdi_17_18_viz-master\hdi_17_18_viz-master\Projekt\NachtsImMuseum4\NachtsImMuseum4\images\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\admin\Documents\GitHub\hdi_17_18_viz\Projekt\NachtsImMuseum4\NachtsImMuseum4\images\LockScreenLogo.scale-200.png">
       <PackagePath>images\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2017-12-07T13:08:15.405</Modified>
+      <Modified>2017-12-11T06:42:45.153</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\student\Documents\hdi_17_18_viz-master\hdi_17_18_viz-master\Projekt\NachtsImMuseum4\NachtsImMuseum4\images\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\admin\Documents\GitHub\hdi_17_18_viz\Projekt\NachtsImMuseum4\NachtsImMuseum4\images\SplashScreen.scale-200.png">
       <PackagePath>images\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-07T13:08:15.405</Modified>
+      <Modified>2017-12-11T06:42:45.154</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\student\Documents\hdi_17_18_viz-master\hdi_17_18_viz-master\Projekt\NachtsImMuseum4\NachtsImMuseum4\images\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\admin\Documents\GitHub\hdi_17_18_viz\Projekt\NachtsImMuseum4\NachtsImMuseum4\images\Square150x150Logo.scale-200.png">
       <PackagePath>images\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-07T13:08:15.421</Modified>
+      <Modified>2017-12-11T06:42:45.155</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\student\Documents\hdi_17_18_viz-master\hdi_17_18_viz-master\Projekt\NachtsImMuseum4\NachtsImMuseum4\images\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\admin\Documents\GitHub\hdi_17_18_viz\Projekt\NachtsImMuseum4\NachtsImMuseum4\images\Square44x44Logo.scale-200.png">
       <PackagePath>images\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-07T13:08:15.421</Modified>
+      <Modified>2017-12-11T06:42:45.156</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\student\Documents\hdi_17_18_viz-master\hdi_17_18_viz-master\Projekt\NachtsImMuseum4\NachtsImMuseum4\images\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\admin\Documents\GitHub\hdi_17_18_viz\Projekt\NachtsImMuseum4\NachtsImMuseum4\images\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>images\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-07T13:08:15.421</Modified>
+      <Modified>2017-12-11T06:42:45.157</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\student\Documents\hdi_17_18_viz-master\hdi_17_18_viz-master\Projekt\NachtsImMuseum4\NachtsImMuseum4\images\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\admin\Documents\GitHub\hdi_17_18_viz\Projekt\NachtsImMuseum4\NachtsImMuseum4\images\StoreLogo.png">
       <PackagePath>images\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-07T13:08:15.421</Modified>
+      <Modified>2017-12-11T06:42:45.158</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\student\Documents\hdi_17_18_viz-master\hdi_17_18_viz-master\Projekt\NachtsImMuseum4\NachtsImMuseum4\images\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\admin\Documents\GitHub\hdi_17_18_viz\Projekt\NachtsImMuseum4\NachtsImMuseum4\images\Wide310x150Logo.scale-200.png">
       <PackagePath>images\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-07T13:08:15.439</Modified>
+      <Modified>2017-12-11T06:42:45.158</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\student\Documents\hdi_17_18_viz-master\hdi_17_18_viz-master\Projekt\NachtsImMuseum4\NachtsImMuseum4\js\bootstrap.js">
-      <PackagePath>js\bootstrap.js</PackagePath>
-      <Modified>2017-12-07T13:22:35.810</Modified>
+    <AppxPackagedFile Include="C:\Users\admin\Documents\GitHub\hdi_17_18_viz\Projekt\NachtsImMuseum4\NachtsImMuseum4\json\lido-0.json">
+      <PackagePath>json\lido-0.json</PackagePath>
+      <Modified>2017-12-11T07:53:02.244</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\student\Documents\hdi_17_18_viz-master\hdi_17_18_viz-master\Projekt\NachtsImMuseum4\NachtsImMuseum4\js\bootstrap.min.js">
-      <PackagePath>js\bootstrap.min.js</PackagePath>
-      <Modified>2017-12-07T13:22:35.815</Modified>
+    <AppxPackagedFile Include="C:\Users\admin\Documents\GitHub\hdi_17_18_viz\Projekt\NachtsImMuseum4\NachtsImMuseum4\json\lido-1.json">
+      <PackagePath>json\lido-1.json</PackagePath>
+      <Modified>2017-12-11T06:42:45.136</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\student\Documents\hdi_17_18_viz-master\hdi_17_18_viz-master\Projekt\NachtsImMuseum4\NachtsImMuseum4\js\jquery-3.2.1.js">
-      <PackagePath>js\jquery-3.2.1.js</PackagePath>
-      <Modified>2017-12-07T13:50:38.900</Modified>
+    <AppxPackagedFile Include="C:\Users\admin\Documents\GitHub\hdi_17_18_viz\Projekt\NachtsImMuseum4\NachtsImMuseum4\json\lido-2.json">
+      <PackagePath>json\lido-2.json</PackagePath>
+      <Modified>2017-12-11T06:42:45.152</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\student\Documents\hdi_17_18_viz-master\hdi_17_18_viz-master\Projekt\NachtsImMuseum4\NachtsImMuseum4\js\main.js">
-      <PackagePath>js\main.js</PackagePath>
-      <Modified>2017-12-07T14:56:29.297</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\student\Documents\hdi_17_18_viz-master\hdi_17_18_viz-master\Projekt\NachtsImMuseum4\NachtsImMuseum4\js\npm.js">
-      <PackagePath>js\npm.js</PackagePath>
-      <Modified>2017-12-07T13:22:35.819</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\student\Documents\hdi_17_18_viz-master\hdi_17_18_viz-master\Projekt\NachtsImMuseum4\NachtsImMuseum4\mkg-lido-excerpt.json">
+    <AppxPackagedFile Include="C:\Users\admin\Documents\GitHub\hdi_17_18_viz\Projekt\NachtsImMuseum4\NachtsImMuseum4\mkg-lido-excerpt.json">
       <PackagePath>mkg-lido-excerpt.json</PackagePath>
-      <Modified>2017-12-07T14:28:02.911</Modified>
+      <Modified>2017-12-11T06:42:45.176</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\student\Documents\hdi_17_18_viz-master\hdi_17_18_viz-master\Projekt\NachtsImMuseum4\NachtsImMuseum4\bin\Debug\ReverseMap\resources.pri">
+    <AppxPackagedFile Include="C:\Users\admin\Documents\GitHub\hdi_17_18_viz\Projekt\NachtsImMuseum4\NachtsImMuseum4\js\bootstrap.js">
+      <PackagePath>js\bootstrap.js</PackagePath>
+      <Modified>2017-12-11T06:42:45.161</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin\Documents\GitHub\hdi_17_18_viz\Projekt\NachtsImMuseum4\NachtsImMuseum4\js\bootstrap.min.js">
+      <PackagePath>js\bootstrap.min.js</PackagePath>
+      <Modified>2017-12-11T06:42:45.161</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin\Documents\GitHub\hdi_17_18_viz\Projekt\NachtsImMuseum4\NachtsImMuseum4\js\jquery-3.2.1.js">
+      <PackagePath>js\jquery-3.2.1.js</PackagePath>
+      <Modified>2017-12-11T06:42:45.164</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin\Documents\GitHub\hdi_17_18_viz\Projekt\NachtsImMuseum4\NachtsImMuseum4\js\main.js">
+      <PackagePath>js\main.js</PackagePath>
+      <Modified>2017-12-11T06:42:45.166</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin\Documents\GitHub\hdi_17_18_viz\Projekt\NachtsImMuseum4\NachtsImMuseum4\js\npm.js">
+      <PackagePath>js\npm.js</PackagePath>
+      <Modified>2017-12-11T06:42:45.167</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\admin\Documents\GitHub\hdi_17_18_viz\Projekt\NachtsImMuseum4\NachtsImMuseum4\bin\Debug\ReverseMap\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-07T14:46:46.481</Modified>
+      <Modified>2017-12-11T07:30:06.847</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

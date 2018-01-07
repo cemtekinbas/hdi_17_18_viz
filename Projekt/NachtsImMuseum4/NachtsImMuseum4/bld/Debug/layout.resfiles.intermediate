@@ -20,4 +20,7 @@ js\bootstrap.min.js
 js\jquery-3.2.1.js
 js\main.js
 js\npm.js
+json\lido-0.json
+json\lido-1.json
+json\lido-2.json
 mkg-lido-excerpt.json

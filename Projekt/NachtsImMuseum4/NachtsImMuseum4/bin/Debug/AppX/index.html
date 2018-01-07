@@ -18,12 +18,8 @@
     <link href="default.css" rel="stylesheet">
 </head>
 
-<body>
+<body onload="alert('hier');">
     <div class="container">
-        <script type="text/javascript" src="js/main.js"></script>
-        <script type="text/javascript">
-            console.log("Hello world");
-        </script>
         <div class="row">
             <div class="col-sm-1 col-md-1" id="xy">
                 Tier
@@ -72,11 +68,44 @@
             </div>
         </div>
     </div>
-   <!-- /.container -->
+
+    <div id="id01"></div>
+
+ 
+
+    <script>
+
+        function loadJSON(callback) {
+            var xobj = new XMLHttpRequest();
+            xobj.overrideMimeType("application/json");
+            xobj.open('GET', 'json/lido-0.json', true);
+            // Replace 'my_data' with the path to your file
+            xobj.onreadystatechange = function () {
+                if (xobj.readyState === 4 && xobj.status === "200") {
+                    // Required use of an anonymous callback 
+                    // as .open() will NOT return a value but simply returns undefined in asynchronous mode
+                    callback(xobj.responseText);
+                }
+            };
+            xobj.send(null);
+        }
+
+        function init() {
+            loadJSON(function (response) {
+                alert('hier');
+                // Parse JSON string into object
+                var actual_JSON = JSON.parse(response);
+                console.log(response);
+            });
+        }
+    </script>
+
+    <!-- /.container -->
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script type="text/javascript" src="js/jquery-3.2.1.js"></script> 
+   <script type="text/javascript" src="json/lido-0.json"></script>
+    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <!-- >script src="js/ie10-viewport-bug-workaround.js"></!--script -->
