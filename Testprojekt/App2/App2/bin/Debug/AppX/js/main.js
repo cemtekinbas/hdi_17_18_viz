@@ -132,8 +132,8 @@ function swiped(event) {
         elem.style.left = posX + "px";
         elem.style.top = posY + "px";
 
-        var newWidth = $("#word_cloud").width() - 5 + "px";
-        var newHeight = $("#word_cloud").height() - 5 + "px";
+        var newWidth = $("#word_cloud").width() -3 + "px";
+       var newHeight = $("#word_cloud").height() -3 + "px";
 
        //change height and width
         $("#word_cloud").css({ "width": newWidth, "height": newHeight }); 
@@ -191,7 +191,7 @@ function stepback(event) {
     if (event.isFinal) {
         isDraggingBack = false;
         $("#word_cloud").animate({
-            height: "700",
+            height: "1000",
             width: "1100",
             left: "0px",
             bottom: "0px",
@@ -205,11 +205,15 @@ function stepback(event) {
    
     chosen = false;
     document.getElementById("ikono1").innerHTML = "";
+    chosenIkonographie = "";
+
 }
 
 
 function getPictures(clickedIkono) {
     var myElement = document.getElementById('pinterest');
+  //  $("ikono1").css('color', "red" );
+      //  tyle.color = "#ad5a75";
     myElement.innerHTML = "";
 
     //add pictures to div
