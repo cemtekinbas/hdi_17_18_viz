@@ -10,8 +10,8 @@ var chosenIkonographie;
 var lastPosX = 0;
 var lastPosY = 0;
 var isDragging = false;
-var lastPosX = 1100;
-var lastPosY = 0;
+var lastPosXBack = 1100;
+var lastPosYBack = 0;
 var isDraggingBack = false;
 // to check if an ikonographie is chosen
 var chosen = false;
@@ -55,9 +55,7 @@ function createWordCloud() {
     WordCloud(document.getElementById('word_cloud'), {
         list: list,
         drawOutOfBound: false,
-        color: function (word, weight) {
-            return (word === chosenIkonographie) ? "#ad5a75" : "#d4d4d4";
-        },
+        color: "#d4d4d4",
         click: function (item) {
             //swipe is now possible
             chosen = true;
@@ -83,19 +81,16 @@ function interactions() {
         preventDefault: true
     };
     // document.body registers gestures anywhere on the page
-    var hammer = new Hammer(wordcloud, options);
-    hammer.get('pan').set({
-        direction: Hammer.DIRECTION_ALL
-    });
-    hammer.on("pan", swiped);
+    var hammer = new Hammer(wordcloud, options); 
+    hammer.on("panright panup", swiped);
+    hammer.on("panend", removeWordcloud);
 
 
     var backToWordcloud = document.getElementById("ikono1");
-    var hammer2 = new Hammer(backToWordcloud);
-    hammer2.get('pan').set({
-        direction: Hammer.DIRECTION_ALL
-    });
-    hammer2.on('pan', stepback);
+
+    var hammer2 = new Hammer(backToWordcloud, options);
+    hammer2.on('panleft pandown', stepback);
+    hammer2.on('panend', loadWordcloud);
     //flip image
     //var image = document.getElementById("lb-container");
     //var hammer2 = new Hammer(image);
@@ -106,7 +101,7 @@ function interactions() {
 }
 
 function swiped(event) {
-    if (chosen) {
+    if (chosen) {     
         // for convience, let's get a reference to our object
         var elem = event.target;
 
@@ -131,29 +126,29 @@ function swiped(event) {
         // move our element to that position
         elem.style.left = posX + "px";
         elem.style.top = posY + "px";
-
-        var newWidth = $("#word_cloud").width() -3 + "px";
-       var newHeight = $("#word_cloud").height() -3 + "px";
+      
+       var newWidth = $("#word_cloud").width() - 3 + "px";
+       var newHeight = $("#word_cloud").height() - 3 + "px";
 
        //change height and width
-        $("#word_cloud").css({ "width": newWidth, "height": newHeight }); 
-        // DRAG ENDED
-        // this is where we simply forget we are dragging
-        if (event.isFinal) {
-            isDragging = false;
-            $("#word_cloud").animate({
-                height: "0px",
-                width: "0px"
-            }, {
-                    duration: 800,
-                    complete: getPictures(chosenIkonographie)
-                }
-            );
-        }
+       $("#word_cloud").css({ "width": newWidth, "height": newHeight }); 
+      
     } else {
         //add alert
         //You first have to click on an ikonographie
     }
+}
+
+function removeWordcloud(event) {
+    isDragging = false;
+    $("#word_cloud").animate({
+        height: "0px",
+        width: "0px"
+    }, {
+            duration: 800,
+            complete: getPictures(chosenIkonographie)
+        }
+    );
 }
 
 function stepback(event) {
@@ -180,40 +175,33 @@ function stepback(event) {
     // move our element to that position
     elem.style.left = posX + "px";
     elem.style.top = posY + "px";
-
+  
     var newWidth = $("#word_cloud").width() + 5 + "px";
     var newHeight = $("#word_cloud").height() + 5 + "px";
 
     //change height and width
     $("#word_cloud").css({ "width": newWidth, "height": newHeight });
-    // DRAG ENDED
-    // this is where we simply forget we are dragging
-    if (event.isFinal) {
-        isDraggingBack = false;
-        $("#word_cloud").animate({
-            height: "1000",
-            width: "1100",
-            left: "0px",
-            bottom: "0px",
-            top: "0px"
-        }, {
-                duration: 600,
-                complete: document.getElementById('pinterest').innerHTML = ""
-            }
-        );
-    }
-   
-    chosen = false;
-    document.getElementById("ikono1").innerHTML = "";
-    chosenIkonographie = "";
-
 }
 
+function loadWordcloud(event) {
+    isDraggingBack = false;
+    $("#word_cloud").animate({
+        height: "1000",
+        width: "1100",
+        left: "0px",
+        bottom: "0px",
+        top: "0px"
+    }, {
+           duration: 600,
+           complete: document.getElementById('pinterest').innerHTML = ""
+        }
+    );
+    chosen = false;
+    document.getElementById("ikono1").innerHTML = "";
+}
 
 function getPictures(clickedIkono) {
     var myElement = document.getElementById('pinterest');
-  //  $("ikono1").css('color', "red" );
-      //  tyle.color = "#ad5a75";
     myElement.innerHTML = "";
 
     //add pictures to div
@@ -254,17 +242,6 @@ function getPictures(clickedIkono) {
     });
 }
 
-function removeDuplicates(arr) {
-    var uniques = [];
-    var itemsFound = {};
-    for (var i = 0, l = arr.length; i < l; i++) {
-        var stringified = JSON.stringify(arr[i]);
-        if (itemsFound[stringified]) { continue; }
-        uniques.push(arr[i]);
-        itemsFound[stringified] = true;
-    }
-    return uniques;
-}
 function picInfo() {
 
     var pictureInfo = [];
@@ -282,7 +259,7 @@ function picInfo() {
     }
     console.log(pictureInfo[4].length);
     $(".back").empty();
-    var p1 = $("<p></p>").text("Objektbezichnung: " + pictureInfo[0]);
+    var p1 = $("<p></p>").text("Objektbezeichnung: " + pictureInfo[0]);
     p1.addClass("lead");
     var p2 = $("<p></p>").text("Sachgruppe: " + pictureInfo[1]);
     p2.addClass("lead");
