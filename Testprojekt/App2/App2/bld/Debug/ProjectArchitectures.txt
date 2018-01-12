@@ -1,1 +1,1 @@
-C:\Users\crist\OneDrive\Dokumente\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\App2.jsproj;neutral
+C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\App2.jsproj;neutral
