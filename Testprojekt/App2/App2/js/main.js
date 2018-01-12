@@ -63,7 +63,7 @@ function createWordCloud() {
             addIkonographie(item[0]);
             chosenIkonographie = item[0];
             //todo: ausgewähltes Wort hervorheben  
-            createWordCloud();                   
+            //createWordCloud();                   
         }
     });
 }
@@ -77,6 +77,7 @@ function addIkonographie(ikonographie) {
 
 function interactions() {
     var wordcloud = document.getElementById("feldname1");
+
     var options = {
         preventDefault: true
     };
@@ -201,6 +202,11 @@ function loadWordcloud(event) {
 }
 
 function getPictures(clickedIkono) {
+    //clear overlay canvas
+    var canvas = document.getElementById("word_cloud_overlay");
+    var context = canvas.getContext("2d");
+    context.clearRect(0, 0, 1100, 1000);
+
     var myElement = document.getElementById('pinterest');
     myElement.innerHTML = "";
 
@@ -240,6 +246,7 @@ function getPictures(clickedIkono) {
         containerSelector: ".wf-container",
         boxSelector: ".wf-box"
     });
+    
 }
 
 function picInfo() {

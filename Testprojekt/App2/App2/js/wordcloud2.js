@@ -374,7 +374,7 @@ if (!window.clearImmediate) {
 
             clearCanvas: true,
 
-            backgroundColor: '#0f0f0f',  // opaque white = rgba(255, 255, 255, 1)
+            backgroundColor:  'rgba(255, 255, 255, 0)',
 
 
 
@@ -863,9 +863,21 @@ if (!window.clearImmediate) {
             }
 
 
-
             settings.click(info.item, info.dimension, evt);
 
+            var canvas = document.getElementById("word_cloud_overlay");
+            var context = canvas.getContext("2d");       
+
+            var x = info.dimension.x;
+            var y = info.dimension.y;
+            var w = info.dimension.w;
+            var h = info.dimension.h;
+
+
+            context.clearRect(0, 0, 1100, 1000);
+            context.fillStyle = "rgba(255,0,0,0.3)";
+            context.fillRect(x, y, w, h);
+           
             evt.preventDefault();
 
         };

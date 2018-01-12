@@ -63,7 +63,7 @@ function createWordCloud() {
             addIkonographie(item[0]);
             chosenIkonographie = item[0];
             //todo: ausgewähltes Wort hervorheben  
-            createWordCloud();                   
+            //createWordCloud();                   
         }
     });
 }
@@ -77,6 +77,7 @@ function addIkonographie(ikonographie) {
 
 function interactions() {
     var wordcloud = document.getElementById("feldname1");
+
     var options = {
         preventDefault: true
     };
@@ -181,46 +182,31 @@ function stepback(event) {
 
     //change height and width
     $("#word_cloud").css({ "width": newWidth, "height": newHeight });
-    // DRAG ENDED
-    // this is where we simply forget we are dragging
-    /*if (event.isFinal) {
-        isDraggingBack = false;
-        $("#word_cloud").animate({
-            height: "1000",
-            width: "1100",
-            left: "0px",
-            bottom: "0px",
-            top: "0px"
-        }, {
-                duration: 600,
-                complete: document.getElementById('pinterest').innerHTML = ""
-            }
-        );
-    }*/
-   
-  
-
 }
 
 function loadWordcloud(event) {
-   
-        isDraggingBack = false;
-        $("#word_cloud").animate({
-            height: "1000",
-            width: "1100",
-            left: "0px",
-            bottom: "0px",
-            top: "0px"
-        }, {
-                duration: 600,
-                complete: document.getElementById('pinterest').innerHTML = ""
-            }
-        );
-        chosen = false;
-        document.getElementById("ikono1").innerHTML = "";
+    isDraggingBack = false;
+    $("#word_cloud").animate({
+        height: "1000",
+        width: "1100",
+        left: "0px",
+        bottom: "0px",
+        top: "0px"
+    }, {
+           duration: 600,
+           complete: document.getElementById('pinterest').innerHTML = ""
+        }
+    );
+    chosen = false;
+    document.getElementById("ikono1").innerHTML = "";
 }
 
 function getPictures(clickedIkono) {
+    //clear overlay canvas
+    var canvas = document.getElementById("word_cloud_overlay");
+    var context = canvas.getContext("2d");
+    context.clearRect(0, 0, 1100, 1000);
+
     var myElement = document.getElementById('pinterest');
     myElement.innerHTML = "";
 
@@ -260,6 +246,7 @@ function getPictures(clickedIkono) {
         containerSelector: ".wf-container",
         boxSelector: ".wf-box"
     });
+    
 }
 
 function picInfo() {

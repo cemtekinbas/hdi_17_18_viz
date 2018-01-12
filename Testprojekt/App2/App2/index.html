@@ -38,10 +38,7 @@
             background-color: #0f0f0f;
         }
 
-        .word_cloud {
-            background-color: #0f0f0f;
-            position: relative;
-        }
+        
 
         .clickedIkono {
             font-size: 35px;
@@ -109,8 +106,9 @@
 
         <!-- Three columns of text below the carousel -->
         <div class="row">
-            <div id="feldname1" class="spaceB">
-                <canvas id="word_cloud" class="word_cloud center-block" width="1100" height="1000"></canvas>
+            <div id="feldname1" class="spaceB" style="position:relative">
+                <canvas id="word_cloud" class="word_cloud center-block" width="1100" height="1000" style="position:absolute; z-index:1" contenteditable="true"></canvas>
+                <canvas id="word_cloud_overlay" class="word_cloud center-block" width="1100" height="1000" style="position:absolute; z-index:0"  contenteditable="true"></canvas>
             </div>
             <div class="wf-container" id="pinterest"></div>
 
