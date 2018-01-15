@@ -73,6 +73,7 @@
 }
 
     #pageflip img {
+        display: none;
         width: 50px;
         height: 52px;
         z-index: 99;

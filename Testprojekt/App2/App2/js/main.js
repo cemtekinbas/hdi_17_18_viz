@@ -416,7 +416,7 @@ function picInfo() {
         }
 
         var self = this;
-        $('<div id="lightboxOverlay" class="lightboxOverlay"></div><div id="lightbox" class="lightbox"><div class="lb-outerContainer"><div class="lb-container"><div class="flip-container"><div class="flipper"><div class="front"><div id="pageflip"><img src="../images/peel-image-white.png" alt="" border="0" /></div ><img class="lb-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" /></div><div id="back" class="back container"></div></div></div><div class="lb-nav"><a class="lb-prev" href="" ></a><a class="lb-next" href="" ></a></div><div class="lb-loader"><a class="lb-cancel"></a></div></div></div><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div><div class="lb-closeContainer"><a class="lb-close"></a></div></div></div></div>').appendTo($('.container'));
+        $('<div id="lightboxOverlay" class="lightboxOverlay"></div><div id="lightbox" class="lightbox"><div class="lb-outerContainer"><div class="lb-container"><div class="flip-container"><div class="flipper"><div class="front"><div id="pageflip"><img id="pagePeel" src="../images/peel-image-white.png" alt="" border="0" /></div ><img class="lb-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" /></div><div id="back" class="back container"></div></div></div><div class="lb-nav"><a class="lb-prev" href="" ></a><a class="lb-next" href="" ></a></div><div class="lb-loader"><a class="lb-cancel"></a></div></div></div><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div><div class="lb-closeContainer"><a class="lb-close"></a></div></div></div></div>').appendTo($('.container'));
 
         var divFlipContainer = document.getElementsByClassName("flip-container");
         divFlipContainer.ontouchstart = "this.classList.toggle('hover');";
@@ -651,6 +651,8 @@ function picInfo() {
                         $image.height(imageHeight);
                     }
                 }
+                $("#pagePeel").css("top", imageHeight - 48);
+
             }
             self.sizeContainer($image.width(), $image.height());
         };
@@ -698,7 +700,8 @@ function picInfo() {
     Lightbox.prototype.showImage = function () {
         this.$lightbox.find('.lb-loader').stop(true).hide();
         this.$lightbox.find('.lb-image').fadeIn(this.options.imageFadeDuration);
-
+        $("#pagePeel").fadeIn(this.options.imageFadeDuration);
+     
         //this.updateNav();
         this.updateDetails();
         this.preloadNeighboringImages();
@@ -796,6 +799,7 @@ function picInfo() {
         $(window).off('resize', this.sizeOverlay);
         this.$lightbox.fadeOut(this.options.fadeDuration);
         this.$overlay.fadeOut(this.options.fadeDuration);
+        $("#pagePeel").fadeOut(this.options.fadeDuration);
         $('select, object, embed').css({
             visibility: 'visible'
         });

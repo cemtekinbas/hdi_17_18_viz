@@ -62,7 +62,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\css\default.css">
       <PackagePath>css\default.css</PackagePath>
-      <Modified>2018-01-12T22:02:11.861</Modified>
+      <Modified>2018-01-15T20:56:30.396</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\css\bootstrap-theme.css.map">
       <PackagePath>css\bootstrap-theme.css.map</PackagePath>
@@ -172,7 +172,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\js\main.js">
       <PackagePath>js\main.js</PackagePath>
-      <Modified>2018-01-12T22:14:05.171</Modified>
+      <Modified>2018-01-15T21:05:15.226</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\js\npm.js">
       <PackagePath>js\npm.js</PackagePath>
