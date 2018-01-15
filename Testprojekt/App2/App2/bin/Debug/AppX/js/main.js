@@ -99,6 +99,31 @@ function interactions() {
     //    direction: Hammer.DIRECTION_ALL
     //});
     //hammer2.on("swipe", stepback);
+
+    var myElement = document.getElementById('lightbox');
+
+    // create a simple instance
+    // by default, it only adds horizontal recognizers
+    var mc = new Hammer(myElement);
+    var pinch = new Hammer.Pinch();
+
+    mc.on("pinch", function (ev) {
+        Lightbox.prototype.end();
+    });
+
+    var myElement2 = document.getElementById('lightbox');
+
+    // create a simple instance
+    // by default, it only adds horizontal recognizers
+    var mc2 = new Hammer(myElement2);
+    var swipeleft = new Hammer.Swipe();
+
+    mc.on("swipeleft", function (ev) {
+        myElement2.onmouseover = function () {
+            myElement2.style.transform="rotateY(-180deg)";
+                myELement2.style.zIndex=" 11";
+        }
+    });
 }
 
 function swiped(event) {
@@ -114,6 +139,10 @@ function swiped(event) {
             lastPosX = elem.offsetLeft;
             lastPosY = elem.offsetTop;
         }
+        //clear overlay canvas
+        //var canvas = document.getElementById("word_cloud_overlay");
+        //var context = canvas.getContext("2d");
+        //context.clearRect(0, 0, 1100, 1000);
 
         // we simply need to determine where the x,y of this
         // object is relative to where it's "last" known position is
@@ -133,7 +162,7 @@ function swiped(event) {
 
        //change height and width
        $("#word_cloud").css({ "width": newWidth, "height": newHeight }); 
-      
+       $("#word_cloud_overlay").css({ "width": "0", "height": "0" }); 
     } else {
         //add alert
         //You first have to click on an ikonographie
@@ -182,6 +211,7 @@ function stepback(event) {
 
     //change height and width
     $("#word_cloud").css({ "width": newWidth, "height": newHeight });
+    $("#word_cloud_overlay").css({ "width": "1100", "height": "1000" });
 }
 
 function loadWordcloud(event) {
@@ -202,11 +232,6 @@ function loadWordcloud(event) {
 }
 
 function getPictures(clickedIkono) {
-    //clear overlay canvas
-    var canvas = document.getElementById("word_cloud_overlay");
-    var context = canvas.getContext("2d");
-    context.clearRect(0, 0, 1100, 1000);
-
     var myElement = document.getElementById('pinterest');
     myElement.innerHTML = "";
 
