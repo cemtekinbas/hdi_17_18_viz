@@ -61,9 +61,7 @@ function createWordCloud() {
             chosen = true;
             //item[0] is the word
             addIkonographie(item[0]);
-            chosenIkonographie = item[0];
-            //todo: ausgewähltes Wort hervorheben  
-            //createWordCloud();                   
+            chosenIkonographie = item[0];                 
         }
     });
 }
@@ -99,37 +97,23 @@ function interactions() {
     //});
     //hammer2.on("swipe", stepback);
     
-    var myElement2 = document.getElementById('flipperBox');
-    // create a simple instance
-    // by default, it only adds horizontal recognizers
-    var mc = new Hammer(myElement2);
-    var pinch = new Hammer.Pinch();
-
+    var flipperBox = document.getElementById('flipperBox');
+    var mc = new Hammer(flipperBox);
     mc.on("pinch", function (ev) {
         this.end();
     });
 
-    
-        // create a simple instance
-    // by default, it only adds horizontal recognizers
-  
-    var swipeleft = new Hammer.Swipe();
-
     mc.on("swipeleft", function (ev) {
-        myElement2.onmouseover = function () {
-            myElement2.style.transform="rotateY(-180deg)";
-             //   myELement2.style.zIndex=" 11";
-        }
+            flipperBox.style.transform="rotateY(-180deg)";
+        
     });
-    var myElement = document.getElementById('back');
-    // create a simple instance
-    // by default, it only adds horizontal recognizers
-    var mc2 = new Hammer(myElement);
-    mc2.on("swiperight", function (ev) {
-        myElement.onmouseover = function () {
-            myElement.style.transform = "rotateY(0deg)";
-            //   myELement2.style.zIndex=" 11";
-        }
+
+    var outerContainer = document.getElementById('outerContainer');
+
+    var mc2 = new Hammer(outerContainer);
+    mc2.on("swiperight", function (ev) {      
+            flipperBox.style.transform = "rotateY(0deg)";
+        
     });
 }
 
@@ -453,7 +437,7 @@ function picInfo() {
         }
 
         var self = this;
-        $('<div id="lightboxOverlay" class="lightboxOverlay"></div><div id="lightbox" class="lightbox"><div class="lb-outerContainer"><div class="lb-container"><div class="flip-container"><div class="flipper" id="flipperBox"><div class="front"><div id="pageflip"><img id="pagePeel" src="../images/peel-image-white.png" alt="" border="0" /></div ><img class="lb-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" /></div><div id="back" class="back container"></div></div></div><div class="lb-nav"><a class="lb-prev" href="" ></a><a class="lb-next" href="" ></a></div><div class="lb-loader"><a class="lb-cancel"></a></div></div></div><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div><div class="lb-closeContainer"><a class="lb-close"></a></div></div></div></div>').appendTo($('.container'));
+        $('<div id="lightboxOverlay" class="lightboxOverlay"></div><div id="lightbox" class="lightbox"><div class="lb-outerContainer" id="outerContainer"><div class="lb-container" id="container"><div class="flip-container" id="flipContainer"><div class="flipper" id="flipperBox"><div class="front"><div id="pageflip"><img id="pagePeel" src="../images/peel-image-white.png" alt="" border="0" /></div ><img class="lb-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" /></div><div id="back" class="back container"><div id="pageflipBack"><img id="pagePeelback" src="../images/peel-image-white-back.png" alt="" border="0" /></div></div></div></div><div class="lb-nav"><a class="lb-prev" href="" ></a><a class="lb-next" href="" ></a></div><div class="lb-loader"><a class="lb-cancel"></a></div></div></div><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div><div class="lb-closeContainer"><a class="lb-close"></a></div></div></div></div>').appendTo($('.container'));
 
         var divFlipContainer = document.getElementsByClassName("flip-container");
         divFlipContainer.ontouchstart = "this.classList.toggle('hover');";

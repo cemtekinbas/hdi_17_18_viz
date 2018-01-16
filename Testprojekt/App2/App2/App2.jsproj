@@ -79,6 +79,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="images\peel-image-white-back.png" />
     <Content Include="images\peel-image-white.png" />
     <Content Include="images\peel-image.png" />
     <Content Include="index.html" />

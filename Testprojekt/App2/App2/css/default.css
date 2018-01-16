@@ -95,4 +95,37 @@
             right: 30px;
         }
 
+#pageflipBack {
+    position: relative;
+    right: 0;
+    top: 0;
+    float: right;
+}
+
+    #pageflipBack img {
+        display: none;
+        width: 50px;
+        height: 52px;
+        z-index: 99;
+        position: absolute;
+        right: 0;
+        top: 0;
+        -ms-interpolation-mode: bicubic;
+    }
+
+    #pageflipBack .msg_block {
+        width: 50px;
+        height: 50px;
+        overflow: hidden;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background: #e4e4e4;
+    }
+
+        #pageflipBack .msg_block .inner-message {
+            position: absolute;
+            top: 45px;
+            right: 30px;
+        }
 
