@@ -83,8 +83,10 @@ function interactions() {
     };
     // document.body registers gestures anywhere on the page
     var hammer = new Hammer(wordcloud, options); 
-    hammer.on("panright panup", swiped);
+    hammer.on("panright panup", swiped); 
     hammer.on("panend", removeWordcloud);
+    
+    
 
 
     var backToWordcloud = document.getElementById("ikono1");
@@ -164,21 +166,27 @@ function swiped(event) {
        $("#word_cloud").css({ "width": newWidth, "height": newHeight }); 
        $("#word_cloud_overlay").css({ "width": "0", "height": "0" }); 
     } else {
+      //  var dialog = new Windows.UI.Popups.MessageDialog("Wählen Sie bitte zuerst eine Darstellung aus.");
+        //dialog.showAsync();
         //add alert
         //You first have to click on an ikonographie
     }
 }
 
 function removeWordcloud(event) {
-    isDragging = false;
-    $("#word_cloud").animate({
-        height: "0px",
-        width: "0px"
-    }, {
-            duration: 800,
-            complete: getPictures(chosenIkonographie)
-        }
-    );
+    if (chosen) {
+        isDragging = false;
+            $("#word_cloud").animate({
+                height: "0px",
+                width: "0px"
+            }, {
+                    duration: 800,
+                    complete: getPictures(chosenIkonographie)
+                }
+            );
+
+    }
+    
 }
 
 function stepback(event) {
@@ -675,8 +683,12 @@ function picInfo() {
                         $image.width(imageWidth);
                         $image.height(imageHeight);
                     }
+                    $("#pagePeel").css("top", imageHeight - 48);
+                } else {
+                    $("#pagePeel").css("top", preloader.height - 48);
+
                 }
-                $("#pagePeel").css("top", imageHeight - 48);
+                
 
             }
             self.sizeContainer($image.width(), $image.height());
