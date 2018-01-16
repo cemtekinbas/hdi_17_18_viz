@@ -16,6 +16,8 @@ var isDraggingBack = false;
 // to check if an ikonographie is chosen
 var chosen = false;
 
+var back = false;
+
 function load() {
     var url = new Windows.Foundation.Uri("ms-appx:///data/data.json");
     Windows.Storage.StorageFile.getFileFromApplicationUriAsync(url).then(function (file) {
@@ -99,21 +101,26 @@ function interactions() {
     
     var flipperBox = document.getElementById('flipperBox');
     var mc = new Hammer(flipperBox);
-    mc.on("pinch", function (ev) {
-        this.end();
-    });
-
     mc.on("swipeleft", function (ev) {
-            flipperBox.style.transform="rotateY(-180deg)";
-        
+        flipperBox.style.transform = "rotateY(-180deg)";
+        back = true;
     });
 
     var outerContainer = document.getElementById('outerContainer');
-
     var mc2 = new Hammer(outerContainer);
     mc2.on("swiperight", function (ev) {      
+        flipperBox.style.transform = "rotateY(0deg)";   
+        back = false;
+    });
+
+    mc2.get('pinch').set({ enable: true });
+    mc2.on("pinch", function (ev) {
+        $("#lightbox").css({ "display": 'none' }); 
+        $("#lightboxOverlay").css({ "display": 'none' }); 
+        if (back) {
             flipperBox.style.transform = "rotateY(0deg)";
-        
+            back = false;
+        }
     });
 }
 
