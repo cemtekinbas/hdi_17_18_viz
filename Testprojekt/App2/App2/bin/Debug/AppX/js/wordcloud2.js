@@ -874,7 +874,7 @@ if (!window.clearImmediate) {
             var h = info.dimension.h;
 
 
-            context.clearRect(0, 0, 1100, 1000);
+            context.clearRect(0, 0, 1100, 900);
             context.fillStyle = "rgba(255,0,0,0.3)";
             context.fillRect(x, y, w, h);
            

@@ -85,9 +85,6 @@ function interactions() {
     var hammer = new Hammer(wordcloud, options); 
     hammer.on("panright panup", swiped); 
     hammer.on("panend", removeWordcloud);
-    
-    
-
 
     var backToWordcloud = document.getElementById("ikono1");
 
@@ -101,29 +98,37 @@ function interactions() {
     //    direction: Hammer.DIRECTION_ALL
     //});
     //hammer2.on("swipe", stepback);
-
-    var myElement = document.getElementById('lightbox');
-
+    
+    var myElement2 = document.getElementById('flipperBox');
     // create a simple instance
     // by default, it only adds horizontal recognizers
-    var mc = new Hammer(myElement);
+    var mc = new Hammer(myElement2);
     var pinch = new Hammer.Pinch();
 
     mc.on("pinch", function (ev) {
-        Lightbox.prototype.end();
+        this.end();
     });
 
-    var myElement2 = document.getElementById('lightbox');
-
-    // create a simple instance
+    
+        // create a simple instance
     // by default, it only adds horizontal recognizers
-    var mc2 = new Hammer(myElement2);
+  
     var swipeleft = new Hammer.Swipe();
 
     mc.on("swipeleft", function (ev) {
         myElement2.onmouseover = function () {
             myElement2.style.transform="rotateY(-180deg)";
-                myELement2.style.zIndex=" 11";
+             //   myELement2.style.zIndex=" 11";
+        }
+    });
+    var myElement = document.getElementById('back');
+    // create a simple instance
+    // by default, it only adds horizontal recognizers
+    var mc2 = new Hammer(myElement);
+    mc2.on("swiperight", function (ev) {
+        myElement.onmouseover = function () {
+            myElement.style.transform = "rotateY(0deg)";
+            //   myELement2.style.zIndex=" 11";
         }
     });
 }
@@ -184,7 +189,6 @@ function removeWordcloud(event) {
                     complete: getPictures(chosenIkonographie)
                 }
             );
-
     }
     
 }
@@ -219,13 +223,13 @@ function stepback(event) {
 
     //change height and width
     $("#word_cloud").css({ "width": newWidth, "height": newHeight });
-    $("#word_cloud_overlay").css({ "width": "1100", "height": "1000" });
+    $("#word_cloud_overlay").css({ "width": "1100", "height": "900" });
 }
 
 function loadWordcloud(event) {
     isDraggingBack = false;
     $("#word_cloud").animate({
-        height: "1000",
+        height: "900",
         width: "1100",
         left: "0px",
         bottom: "0px",
@@ -449,7 +453,7 @@ function picInfo() {
         }
 
         var self = this;
-        $('<div id="lightboxOverlay" class="lightboxOverlay"></div><div id="lightbox" class="lightbox"><div class="lb-outerContainer"><div class="lb-container"><div class="flip-container"><div class="flipper"><div class="front"><div id="pageflip"><img id="pagePeel" src="../images/peel-image-white.png" alt="" border="0" /></div ><img class="lb-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" /></div><div id="back" class="back container"></div></div></div><div class="lb-nav"><a class="lb-prev" href="" ></a><a class="lb-next" href="" ></a></div><div class="lb-loader"><a class="lb-cancel"></a></div></div></div><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div><div class="lb-closeContainer"><a class="lb-close"></a></div></div></div></div>').appendTo($('.container'));
+        $('<div id="lightboxOverlay" class="lightboxOverlay"></div><div id="lightbox" class="lightbox"><div class="lb-outerContainer"><div class="lb-container"><div class="flip-container"><div class="flipper" id="flipperBox"><div class="front"><div id="pageflip"><img id="pagePeel" src="../images/peel-image-white.png" alt="" border="0" /></div ><img class="lb-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" /></div><div id="back" class="back container"></div></div></div><div class="lb-nav"><a class="lb-prev" href="" ></a><a class="lb-next" href="" ></a></div><div class="lb-loader"><a class="lb-cancel"></a></div></div></div><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div><div class="lb-closeContainer"><a class="lb-close"></a></div></div></div></div>').appendTo($('.container'));
 
         var divFlipContainer = document.getElementsByClassName("flip-container");
         divFlipContainer.ontouchstart = "this.classList.toggle('hover');";

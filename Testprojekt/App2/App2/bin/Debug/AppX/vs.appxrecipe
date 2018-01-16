@@ -62,7 +62,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\css\default.css">
       <PackagePath>css\default.css</PackagePath>
-      <Modified>2018-01-16T08:20:19.693</Modified>
+      <Modified>2018-01-16T13:03:37.956</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\css\bootstrap-theme.css.map">
       <PackagePath>css\bootstrap-theme.css.map</PackagePath>
@@ -156,7 +156,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\index.html">
       <PackagePath>index.html</PackagePath>
-      <Modified>2018-01-12T21:16:37.746</Modified>
+      <Modified>2018-01-16T13:18:11.572</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\js\hammer.min.js">
       <PackagePath>js\hammer.min.js</PackagePath>
@@ -172,7 +172,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\js\main.js">
       <PackagePath>js\main.js</PackagePath>
-      <Modified>2018-01-16T09:27:27.021</Modified>
+      <Modified>2018-01-16T13:17:37.712</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\js\npm.js">
       <PackagePath>js\npm.js</PackagePath>
@@ -184,7 +184,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\js\wordcloud2.js">
       <PackagePath>js\wordcloud2.js</PackagePath>
-      <Modified>2018-01-12T21:16:37.755</Modified>
+      <Modified>2018-01-16T13:18:06.105</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\bin\Debug\ReverseMap\resources.pri">
       <PackagePath>resources.pri</PackagePath>
