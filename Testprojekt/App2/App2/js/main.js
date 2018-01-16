@@ -115,8 +115,8 @@ function interactions() {
 
     mc2.get('pinch').set({ enable: true });
     mc2.on("pinch", function (ev) {
-        $("#lightbox").css({ "display": 'none' }); 
-        $("#lightboxOverlay").css({ "display": 'none' }); 
+        $("#lightbox").fadeOut(900);
+        $("#lightboxOverlay").fadeOut(900); 
         if (back) {
             flipperBox.style.transform = "rotateY(0deg)";
             back = false;
