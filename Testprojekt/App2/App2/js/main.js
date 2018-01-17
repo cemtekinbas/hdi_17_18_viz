@@ -137,11 +137,7 @@ function swiped(event) {
             lastPosX = elem.offsetLeft;
             lastPosY = elem.offsetTop;
         }
-        //clear overlay canvas
-        //var canvas = document.getElementById("word_cloud_overlay");
-        //var context = canvas.getContext("2d");
-        //context.clearRect(0, 0, 1100, 1000);
-
+       
         // we simply need to determine where the x,y of this
         // object is relative to where it's "last" known position is
         // NOTE: 
@@ -196,6 +192,10 @@ function stepback(event) {
         lastPosXBack = elem.offsetLeft;
         lastPosYBack = elem.offsetTop;
     }
+     //clear overlay canvas
+        var canvas = document.getElementById("word_cloud_overlay");
+        var context = canvas.getContext("2d");
+        context.clearRect(0, 0, 1100, 1000);
 
     // we simply need to determine where the x,y of this
     // object is relative to where it's "last" known position is
