@@ -161,6 +161,7 @@ function swiped(event) {
        //change height and width
        $("#word_cloud").css({ "width": newWidth, "height": newHeight }); 
        $("#word_cloud_overlay").css({ "width": "0", "height": "0" }); 
+       document.getElementById("mySidenav").style.width = "250px";
     } else {
       //  var dialog = new Windows.UI.Popups.MessageDialog("Wählen Sie bitte zuerst eine Darstellung aus.");
         //dialog.showAsync();
@@ -215,6 +216,7 @@ function stepback(event) {
     //change height and width
     $("#word_cloud").css({ "width": newWidth, "height": newHeight });
     $("#word_cloud_overlay").css({ "width": "1100", "height": "900" });
+    document.getElementById("mySidenav").style.width = "0px";
 }
 
 function loadWordcloud(event) {

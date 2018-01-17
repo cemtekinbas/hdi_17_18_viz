@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>KATHRINSURFACE</Machine>
-    <WindowsUser>Kathrin</WindowsUser>
+    <Machine>FOX</Machine>
+    <WindowsUser>crist</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
@@ -10,139 +10,145 @@
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>ea7eb66e-7fd7-47c0-8c21-924de137d5a1</PackageIdentityName>
     <PackageIdentityPublisher>CN=cemte</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\bld\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\crist\OneDrive\Dokumente\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\bld\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath></WindowsSdkPath>
-    <LayoutDir>C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\bin\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\crist\OneDrive\Dokumente\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\bin\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\crist\OneDrive\Dokumente\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\css\bootstrap-theme.css">
+    <AppxPackagedFile Include="C:\Users\crist\OneDrive\Dokumente\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\css\bootstrap-theme.css">
       <PackagePath>css\bootstrap-theme.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\css\bootstrap-theme.min.css">
+    <AppxPackagedFile Include="C:\Users\crist\OneDrive\Dokumente\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\css\bootstrap-theme.min.css">
       <PackagePath>css\bootstrap-theme.min.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\css\bootstrap.css">
+    <AppxPackagedFile Include="C:\Users\crist\OneDrive\Dokumente\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\css\bootstrap.css">
       <PackagePath>css\bootstrap.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\css\bootstrap.min.css">
+    <AppxPackagedFile Include="C:\Users\crist\OneDrive\Dokumente\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\css\bootstrap.min.css">
       <PackagePath>css\bootstrap.min.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\css\lightbox.css">
+    <AppxPackagedFile Include="C:\Users\crist\OneDrive\Dokumente\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\css\lightbox.css">
       <PackagePath>css\lightbox.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\css\wf-style.css">
+    <AppxPackagedFile Include="C:\Users\crist\OneDrive\Dokumente\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\css\wf-style.css">
       <PackagePath>css\wf-style.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\css\default.css">
+    <AppxPackagedFile Include="C:\Users\crist\OneDrive\Dokumente\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\css\default.css">
       <PackagePath>css\default.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\css\bootstrap-theme.css.map">
+    <AppxPackagedFile Include="C:\Users\crist\OneDrive\Dokumente\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\css\bootstrap-theme.css.map">
       <PackagePath>css\bootstrap-theme.css.map</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\css\bootstrap-theme.min.css.map">
+    <AppxPackagedFile Include="C:\Users\crist\OneDrive\Dokumente\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\css\bootstrap-theme.min.css.map">
       <PackagePath>css\bootstrap-theme.min.css.map</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\css\bootstrap.css.map">
+    <AppxPackagedFile Include="C:\Users\crist\OneDrive\Dokumente\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\css\bootstrap.css.map">
       <PackagePath>css\bootstrap.css.map</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\css\bootstrap.min.css.map">
+    <AppxPackagedFile Include="C:\Users\crist\OneDrive\Dokumente\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\css\bootstrap.min.css.map">
       <PackagePath>css\bootstrap.min.css.map</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\data\data.json">
+    <AppxPackagedFile Include="C:\Users\crist\OneDrive\Dokumente\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\data\data.json">
       <PackagePath>data\data.json</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\data\exampledata.json">
+    <AppxPackagedFile Include="C:\Users\crist\OneDrive\Dokumente\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\data\exampledata.json">
       <PackagePath>data\exampledata.json</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\data\mkg-lido-excerpt.json">
+    <AppxPackagedFile Include="C:\Users\crist\OneDrive\Dokumente\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\data\mkg-lido-excerpt.json">
       <PackagePath>data\mkg-lido-excerpt.json</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\fonts\glyphicons-halflings-regular.eot">
+    <AppxPackagedFile Include="C:\Users\crist\OneDrive\Dokumente\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\fonts\glyphicons-halflings-regular.eot">
       <PackagePath>fonts\glyphicons-halflings-regular.eot</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\fonts\glyphicons-halflings-regular.svg">
+    <AppxPackagedFile Include="C:\Users\crist\OneDrive\Dokumente\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\fonts\glyphicons-halflings-regular.svg">
       <PackagePath>fonts\glyphicons-halflings-regular.svg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\fonts\glyphicons-halflings-regular.ttf">
+    <AppxPackagedFile Include="C:\Users\crist\OneDrive\Dokumente\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\fonts\glyphicons-halflings-regular.ttf">
       <PackagePath>fonts\glyphicons-halflings-regular.ttf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\fonts\glyphicons-halflings-regular.woff">
+    <AppxPackagedFile Include="C:\Users\crist\OneDrive\Dokumente\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\fonts\glyphicons-halflings-regular.woff">
       <PackagePath>fonts\glyphicons-halflings-regular.woff</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\fonts\glyphicons-halflings-regular.woff2">
+    <AppxPackagedFile Include="C:\Users\crist\OneDrive\Dokumente\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\fonts\glyphicons-halflings-regular.woff2">
       <PackagePath>fonts\glyphicons-halflings-regular.woff2</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\images\peel-image-white-back.png">
+    <AppxPackagedFile Include="C:\Users\crist\OneDrive\Dokumente\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\images\add-weiss.png">
+      <PackagePath>images\add-weiss.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\crist\OneDrive\Dokumente\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\images\peel-image-white-back.png">
       <PackagePath>images\peel-image-white-back.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\images\peel-image-white.png">
+    <AppxPackagedFile Include="C:\Users\crist\OneDrive\Dokumente\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\images\peel-image-white.png">
       <PackagePath>images\peel-image-white.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\images\peel-image.png">
+    <AppxPackagedFile Include="C:\Users\crist\OneDrive\Dokumente\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\images\peel-image.png">
       <PackagePath>images\peel-image.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\images\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\crist\OneDrive\Dokumente\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\images\printer.png">
+      <PackagePath>images\printer.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\crist\OneDrive\Dokumente\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\images\LockScreenLogo.scale-200.png">
       <PackagePath>images\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\images\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\crist\OneDrive\Dokumente\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\images\SplashScreen.scale-200.png">
       <PackagePath>images\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\images\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\crist\OneDrive\Dokumente\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\images\Square150x150Logo.scale-200.png">
       <PackagePath>images\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\images\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\crist\OneDrive\Dokumente\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\images\Square44x44Logo.scale-200.png">
       <PackagePath>images\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\images\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\crist\OneDrive\Dokumente\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\images\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>images\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\images\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\crist\OneDrive\Dokumente\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\images\StoreLogo.png">
       <PackagePath>images\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\images\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\crist\OneDrive\Dokumente\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\images\Wide310x150Logo.scale-200.png">
       <PackagePath>images\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\index.html">
+    <AppxPackagedFile Include="C:\Users\crist\OneDrive\Dokumente\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\index.html">
       <PackagePath>index.html</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\js\hammer.min.js">
+    <AppxPackagedFile Include="C:\Users\crist\OneDrive\Dokumente\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\js\hammer.min.js">
       <PackagePath>js\hammer.min.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\js\bootstrap.js">
+    <AppxPackagedFile Include="C:\Users\crist\OneDrive\Dokumente\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\js\bootstrap.js">
       <PackagePath>js\bootstrap.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\js\bootstrap.min.js">
+    <AppxPackagedFile Include="C:\Users\crist\OneDrive\Dokumente\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\js\bootstrap.min.js">
       <PackagePath>js\bootstrap.min.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\js\main.js">
+    <AppxPackagedFile Include="C:\Users\crist\OneDrive\Dokumente\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\js\main.js">
       <PackagePath>js\main.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\js\npm.js">
+    <AppxPackagedFile Include="C:\Users\crist\OneDrive\Dokumente\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\js\npm.js">
       <PackagePath>js\npm.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\js\responsive_waterfall.js">
+    <AppxPackagedFile Include="C:\Users\crist\OneDrive\Dokumente\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\js\responsive_waterfall.js">
       <PackagePath>js\responsive_waterfall.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\js\wordcloud2.js">
+    <AppxPackagedFile Include="C:\Users\crist\OneDrive\Dokumente\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\js\wordcloud2.js">
       <PackagePath>js\wordcloud2.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\bin\Debug\ReverseMap\resources.pri">
+    <AppxPackagedFile Include="C:\Users\crist\OneDrive\Dokumente\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\bin\Debug\ReverseMap\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
