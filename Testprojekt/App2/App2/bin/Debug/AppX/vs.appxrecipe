@@ -184,7 +184,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\js\main.js">
       <PackagePath>js\main.js</PackagePath>
-      <Modified>2018-01-17T10:26:46.495</Modified>
+      <Modified>2018-01-18T11:36:39.470</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kathrin\Documents\GitHub\hdi_17_18_viz\Testprojekt\App2\App2\js\npm.js">
       <PackagePath>js\npm.js</PackagePath>
