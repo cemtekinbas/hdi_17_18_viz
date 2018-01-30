@@ -215,14 +215,14 @@ function stepback(event) {
 
     //change height and width
     $("#word_cloud").css({ "width": newWidth, "height": newHeight });
-    $("#word_cloud_overlay").css({ "width": "1100", "height": "900" });
+    $("#word_cloud_overlay").css({ "width": "1100", "height": "800" });
     document.getElementById("mySidenav").style.width = "0px";
 }
 
 function loadWordcloud(event) {
     isDraggingBack = false;
     $("#word_cloud").animate({
-        height: "900",
+        height: "800",
         width: "1100",
         left: "0px",
         bottom: "0px",
